@@ -1,5 +1,6 @@
 <%- include("../partials/header"); %>
 
+
     <main>
         <div class=" barraLaranja">
             <div class="itensbarra">
@@ -31,20 +32,21 @@
         </div>
 
         <div class="promocao">
-            <img src="images/banner_img.jpg" alt="promocao">
+            <img src="images/banner-blackFriday.svg" alt="promocao">
         </div>
 
         <div class="caixa">
             <div id="mes">
-                JULHO GAMER
+                BLACK NOVEMBER
             </div>
-            <div class="timer">
-                <div id="text">
-                    TERMINA EM:
+            <div class="timer" id="text">
+                <P>TERMINA EM: </P> &nbsp;
+                <div>
+                    <div id="timer">
+                    </div>
                 </div>
 
                 <div id="cronometro">
-                    02D 11:36:44
                 </div>
             </div>
         </div>
@@ -60,7 +62,9 @@
                                 <div class="containerPai">
                                     <div class="containerFilho">
                                         <div class="displayOrange" id="caixaA">
-                                            <div id="porcentagem">40%</div>
+                                            <div id="porcentagem">
+                                                <%= produto.desconto %>
+                                            </div>
                                             <div id="caixaspan"><span class="iconify" data-icon="bxs:down-arrow">
                                                 </span></div>
                                         </div>
@@ -82,12 +86,13 @@
                                     </div>
                                 </div>
 
-                                <img src="images/<%= produto.imagem %>" width="200px" height="200px" alt="processador">
+                                <img src="images/<%= produto.imagem %>" width="200px" height="200px">
                                 <div id="texto">
                                     <%= produto.modelo %>
                                 </div>
                                 <div id="texto1">
-                                    <%= Math.round(produto.preco * 1.1) %>,00
+                                    <!-- <%= Math.round(produto.preco * 1.1) %>,00 -->
+                                    <%= produto.unpriced %>,00
                                 </div>
                                 <div id="texto2">
                                     <%= produto.preco %>,00
@@ -98,7 +103,11 @@
                                         <span class="iconify" data-icon="mdi:timer-outline">
                                         </span>
                                     </div>
-                                    <div id="textTermina">TERMINA EM: <b>02D 11:36:44</b></div>
+                                    <div id="textTermina"><p>TERMINA EM:&nbsp;</p>
+                                        <div id="timer" class="orange">
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -124,4 +133,30 @@
         </div>
     </main>
 
+    <script>
+        function startTimer(duration, display) {
+            let timer = duration, hours, minutes, seconds;
+
+            setInterval(function () {
+                hours = parseInt(1000 * 60 * 60 * 23) / (1000 * 60 * 60);
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ':' + minutes + ':' + seconds;
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const duration = 60 * 59;
+            const display = document.querySelector("#timer")
+            startTimer(duration, display);
+        }
+    </script>
     <%- include('../partials/footer'); %>

@@ -236,6 +236,10 @@
     margin-right: 15.8%;
 }
 
+.orange{
+    color: #FF6500;
+}
+
 .promocao img {
     cursor: pointer;
     width: 100%;
@@ -373,12 +377,11 @@
 }
 
 #texto {
-    width: 250px;
     height: 40px;
-    display: flex;
+    display: inline-block;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 15px;
+    margin-left: 5%;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 400;
@@ -386,7 +389,11 @@
     line-height: 16px;
     color: #000000;
     cursor: pointer;
-
+    max-width: 260px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #texto:hover{
