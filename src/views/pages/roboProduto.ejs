@@ -6,16 +6,13 @@
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
     <link rel="stylesheet" href="../public/stylesheets/produto.css">
     <link rel="icon" href="/public/images/kabum-icone.ico">
-    <title>Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático, Filtro HEPA, Controle via
-        Aplicativo-KBSF000 | KaBuM</title>
+    <title><%= produto.modelo %>  | KaBuM</title>
 </head>
 <body>
     <p class="barraLaranja"></p>
     <main class="container-principal">
         <div class="container-produto">
-            <p class="titulo">Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático, Filtro HEPA,
-                Controle via
-                Aplicativo - KBSF000</p>
+            <p class="titulo"><%= produto.modelo %></p>
 
             <div class="icones">
                 <div class="imageSmart">
@@ -134,10 +131,10 @@
                     </div>
                     <div class="container-price">
                         <p class="strike"><s>
-                                R$1.150,00
+                                <%= produto.unpriced %>,00
                             </s></p>
                         <p class="price-pix">
-                            R$ 854,00
+                            <%= produto.price %>,00
                         </p>
                         <p class="pix">
                             À vista no PIX
