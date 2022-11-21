@@ -28,14 +28,16 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M11.4243 23.3261L11.986 24L12.585 23.2886C12.6606 23.198 12.7544 23.0951 12.8616 22.9776L12.8617 22.9775C13.0201 22.8039 13.2078 22.5982 13.4087 22.3526L13.5684 22.1709C16.0593 19.3375 20.9719 13.7493 20.9719 8.98596C20.9719 4.04368 16.9282 0 11.986 0C7.04368 0 3 4.04368 3 8.98596C3 13.8908 8.16693 19.6942 10.6755 22.4649C10.8582 22.6933 11.027 22.8799 11.1734 23.0417L11.1734 23.0417L11.1734 23.0418C11.267 23.1452 11.3513 23.2385 11.4243 23.3261ZM7.86719 8.42435C7.86719 10.7083 9.70182 12.5429 11.9858 12.5429C14.2697 12.5429 16.1043 10.7083 16.1043 8.42435C16.1043 6.14042 14.2697 4.30579 11.9858 4.30579C9.70182 4.30579 7.86719 6.14042 7.86719 8.42435Z"
                                     fill="#FF6500"></path>
-                                    
                             </svg>
-                            <h2>SELECIONE O ENDEREÇO</h2>
+                            <h2 class="nameAddress">SELECIONE O ENDEREÇO</h2>
+
                         </div>
                         <form action="" class="containerInputCEP">
                             <div class="InputCEP">
-                                <input type="text" maxlength="9">
-                                <button type="submit" onclick="" id="buttonCEP">OK</button>
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" placeholder="Inserir CEP">
+                                    <button type="submit" onclick="" id="buttonCEP">OK</button>
+                                </div>
                             </div>
                             <a target="_blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não lembro meu CEP</a>
                         </form>
@@ -51,74 +53,9 @@
             </div>
         </div>
     </main>
-<script>
-        function limpa_formulário_cep() {
-            //Limpa valores do formulário de cep.
-            document.getElementById('rua').value=("");
-            document.getElementById('bairro').value=("");
-            document.getElementById('cidade').value=("");
-            document.getElementById('uf').value=("");
-            document.getElementById('ibge').value=("");
-    }
-
-    function meu_callback(conteudo) {
-        if (!("erro" in conteudo)) {
-            //Atualiza os campos com os valores.
-            document.getElementById('rua').value=(conteudo.logradouro);
-            document.getElementById('bairro').value=(conteudo.bairro);
-            document.getElementById('cidade').value=(conteudo.localidade);
-            document.getElementById('uf').value=(conteudo.uf);
-            document.getElementById('ibge').value=(conteudo.ibge);
-        } //end if.
-        else {
-            //CEP não Encontrado.
-            limpa_formulário_cep();
-            alert("CEP não encontrado.");
-        }
-    }
-        
-    function pesquisacep(valor) {
-
-        //Nova variável "cep" somente com dígitos.
-        var cep = valor.replace(/\D/g, '');
-
-        //Verifica se campo cep possui valor informado.
-        if (cep != "") {
-
-            //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
-
-            //Valida o formato do CEP.
-            if(validacep.test(cep)) {
-
-                //Preenche os campos com "..." enquanto consulta webservice.
-                document.getElementById('rua').value="...";
-                document.getElementById('bairro').value="...";
-                document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
-                document.getElementById('ibge').value="...";
-
-                //Cria um elemento javascript.
-                var script = document.createElement('script');
-
-                //Sincroniza com o callback.
-                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
-
-                //Insere script no documento e carrega o conteúdo.
-                document.body.appendChild(script);
-
-            } //end if.
-            else {
-                //cep é inválido.
-                limpa_formulário_cep();
-                alert("Formato de CEP inválido.");
-            }
-        } //end if.
-        else {
-            //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
-        }
-    };
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </html>
