@@ -44,6 +44,9 @@ body {
     width: 100%;
     padding: 1rem;
     background-color: rgb(255,255,255);
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .addressText{
@@ -61,6 +64,7 @@ body {
     margin-left: 0.625rem;
     margin-top: 0.1rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .containerInputCEP{
@@ -83,10 +87,76 @@ body {
 }
 
 .form-control{
-    display: block;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid rgb(222,224,228);
-    width: 100%;
+    width: 10rem;
+    height: 1rem;
     padding: 0.75rem 1rem;
     border-radius: 0.25rem;
+    margin-bottom: 5%;
+}
+
+#buttonCEP{
+    width: 15%;
+    margin-left: 0.5rem;
+    font-size: 100%;
+    line-height: 2rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(255,101,0);
+    background-color: rgb(255,101,0);
+    color: rgb(255,255,255);
+}
+
+#remember{
+    line-height: 1.5rem;
+    color: rgb(255,101,0);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.containerProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.25rem;
+    gap: 0.5rem;
+}
+
+.productStyleSection{
+    width: 100%;
+    padding: 1rem;
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productTitle{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+.productNRide{
+    display: block;
+    font-size: 100%;
+    font-weight: 700;
+    color: rgb(66,70,77);
+    margin-left: 0.625rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+#removeProduct{
+    display: flex;
 }

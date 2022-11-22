@@ -35,20 +35,47 @@
                         <form action="" class="containerInputCEP">
                             <div class="InputCEP">
                                 <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" placeholder="Inserir CEP">
-                                    <button type="submit" onclick="" id="buttonCEP">OK</button>
+                                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')"
+                                        placeholder="Inserir CEP">
+                                    <button type="submit" onclick="" id="buttonCEP" disabled>OK</button>
                                 </div>
                             </div>
-                            <a target="_blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não lembro meu CEP</a>
+                            <a target="_blank" id="remember"
+                                href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não lembro meu
+                                CEP</a>
                         </form>
-                        <span><strong>Entregar em:</strong>
-                            <strong class="bairro"></strong>
-                            <strong class="cidade"></strong>
-                            <strong class="uf"></strong>
-                        </span>
                     </section>
                 </div>
-                <div class="containerProduct"></div>
+                <div class="containerProduct">
+                    <section class="productStyleSection">
+                        <div class="productTitle">
+                            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                xmlns="https://www.w3.org/2000/svg" class="IconBasket">
+                                <path
+                                    d="M18.3335 7.50676H14.3418L10.6835 2.03529C10.6073 1.92192 10.5043 1.82904 10.3837 1.76481C10.2631 1.70058 10.1285 1.66699 9.99183 1.66699C9.85516 1.66699 9.72059 1.70058 9.59997 1.76481C9.47935 1.82904 9.37639 1.92192 9.30016 2.03529L5.64183 7.50676H1.66683C1.2085 7.50676 0.833496 7.88152 0.833496 8.33956C0.833496 8.41451 0.841829 8.48946 0.866829 8.56441L2.9835 16.2844C3.17516 16.984 3.81683 17.5003 4.5835 17.5003H15.4168C16.1835 17.5003 16.8252 16.984 17.0252 16.2844L19.1418 8.56441L19.1668 8.33956C19.1668 7.88152 18.7918 7.50676 18.3335 7.50676ZM9.99183 4.00069L12.3335 7.50676H7.65016L9.99183 4.00069ZM10.0002 14.1691C9.0835 14.1691 8.3335 13.4196 8.3335 12.5035C8.3335 11.5875 9.0835 10.8379 10.0002 10.8379C10.9168 10.8379 11.6668 11.5875 11.6668 12.5035C11.6668 13.4196 10.9168 14.1691 10.0002 14.1691Z"
+                                    fill="#E35214"></path>
+                            </svg>
+                            <h2 class="productNRide">PRODUTO E FRETE</h2>
+                            <button id="removeProduct">
+                                <svg width="10" height="10" viewBox="0 0 24 32" fill="none"
+                                    xmlns="https://www.w3.org/2000/svg" class="IconTrash">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.6154 4H22.1538C23.2615 4 24 4.8 24 6V8H0V6C0 4.8 0.923077 4 1.84615 4H7.38462C7.75385 1.8 9.78461 0 12 0C14.2154 0 16.2462 1.8 16.6154 4ZM9.23077 4H14.7692C14.4 2.8 13.1077 2 12 2C10.8923 2 9.6 2.8 9.23077 4ZM1.84615 10H22.1538L20.4923 30.2C20.4923 31.2 19.5692 32 18.6462 32H5.35385C4.43077 32 3.69231 31.2 3.50769 30.2L1.84615 10Z"
+                                        fill="#e72626"></path>
+                                </svg>
+                                <span>REMOVER TODOS</span>
+                            </button>
+                        </div>
+                        <div class="checkoutButtons">
+                            <section class="checkoutStyle">
+                                <div class="chechoutNavigation">
+                                    <button>CONTINUAR COMPRANDO</button>
+                                    <button>IR PARA O PAGAMENTO</button>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
                 <div class="containerButton"></div>
             </div>
         </div>
@@ -58,4 +85,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
 </html>
