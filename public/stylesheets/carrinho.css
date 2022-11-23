@@ -141,7 +141,16 @@ body {
     gap: 0.5rem;
 }
 
+.productTitle2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+.Iconbasket{
+    color: rgb(255,101,0);
+}
 
 .productNRide{
     display: block;
@@ -157,4 +166,25 @@ body {
 
 #removeProduct{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    background: transparent;
+    border: 1px solid rgb(231,38,38);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.IconTrash{
+    margin-right: 0.25rem;
+    height: 0.8125rem;
+    width: 0.8125rem;
+}
+
+.removeItens{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgb(231,38,38);
 }
