@@ -188,3 +188,25 @@ body {
     font-weight: 600;
     color: rgb(231,38,38);
 }
+
+.productImage{
+    display: flex;
+    flex-direction: column;    
+}
+
+.productImage2{
+    display: flex;
+}
+
+.productList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productOrigin{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0px;
+}
