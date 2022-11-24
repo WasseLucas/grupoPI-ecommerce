@@ -1,7 +1,6 @@
+<%- include("../partials/header") %>
+    <link rel="stylesheet" href="/public/stylesheets/carrinho.css">
 
-<%- include("../partials/header"); %>
-<link rel="stylesheet" href="/public/stylesheets/carrinho.css">
-    
     <p class="barraLaranja"></p>
 
     <main>
@@ -16,38 +15,47 @@
                     lembro meu CEP</a>
             </div>
         </div>
+        <% if (carrinho.length !==0){ %>
+            <% carrinho.map((produto)=>{ %>
+                <div class="product">
+                    <div class="interfaceProduct">
+                        <h2 id="product">
+                            <%= produto.modelo %>
+                        </h2>
+                        <div class="productImage">
+                            <img src="images/<%= produto.imagem %>" alt="Imagem do produto">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p id="robot"></p>
+                        <div id="description">
+                            <span id="descriptionProduct">
+                                <%= produto.preco %>
+                            </span>
+                        </div>
+                        <div id="description">
+                            <span id="descriptionProduct" class="margin-end">Parcelado no cartão em até 10x: R$
+                                1.150,90</span>
+                        </div>
+                    </div>
+                    <div class="cupom">
+                        <div class="infosCupom">
+                            <%= console.log(index) %>
+                                <form action=<%=`/carrinhod/`${index}`%> method="post">
+                                    <button>EXCLUIR</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+                <% })} %>
+                    </div>
 
-        <div class="product">
-            <div class="interfaceProduct">
-                <h2 id="product">PRODUTO</h2>
-                <div class="productImage">
-                    <img src="/public/images/IMAGEM ARSENAL.png" alt="Imagem do aspirador de pó da Kabum!">
-                </div>
-            </div>
-            <div class="description">
-                <p id="robot">Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático!</p>
-                <div id="description">
-                    <span id="descriptionProduct">Com desconto no PIX: R$ 854,00</span>
-                </div>
-                <div id="description">
-                    <span id="descriptionProduct" class="margin-end">Parcelado no cartão em até 10x: R$ 1.150,90</span>
-                </div>
-            </div>
-            <div class="cupom">
-                <div class="infosCupom">
-                    <input id="applyCupom" placeholder="Insira seu cupom de desconto" value="">
-                    <button type="submit" id="buttonApply">Aplicar cupom</button>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="cart">
-            <div id="cart">
-                <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
-                <button type="submit" id="continue">CONTINUAR COMPRANDO</button>
-            </div>
-        </div>
+                    <div class="cart">
+                        <div id="cart">
+                            <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
+                            <button type="submit" id="continue">CONTINUAR COMPRANDO</button>
+                        </div>
+                    </div>
     </main>
 
-    <%- include('../partials/footer'); %>
+    <%- include('../partials/footer') %>
