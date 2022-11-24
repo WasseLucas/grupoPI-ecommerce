@@ -10,8 +10,6 @@ const homeController = {
         const produtos = Produto.findByCategoria('lançamentos')
         res.render("./pages/home", { produtos })
     }
-
-
 }
 
 module.exports = homeController
