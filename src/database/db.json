@@ -12,12 +12,13 @@
             "altura": "76mm",
             "cor": "Preto",
             "voltagem": "14,4 Volts",
+            "categoria": "eletronicos",
             "garantia": "1",
             "Tipo de recarga": "carregamento automático e/ou manual",
             "imagem": "IMG ASPIRADOR.svg",
+            "imagem1":"",
             "imagem2":"",
             "imagem3":"",
-            "imagem4":"",
             "description1": "Conforto e praticidade na limpeza diária do seu lar! Que tal não se preocupar mais em varrer, aspirar e passar pano todos os dias? Com o <b>Robô Aspirador de Pó KaBuM! Smart você curte seu dia, enquanto ele limpa!"
         },
         {
@@ -31,8 +32,13 @@
             "quantidade": "13",
             "cor": "",
             "largura": "",
+            "categoria": "eletronicos",
             "garantia": "1",
-            "imagem": "IMG PROCE RYZEN.svg"
+            "imagem": "IMG PROC RYZEN.svg",
+            "imagem1": "IMG PROC RYZEN01.svg",
+            "imagem2": "IMG PROC RYZEN02.svg",
+            "imagem3": "IMG PROC RYZEN03.svg",
+            "description1": ""
         },
         {
             "id": "003",
@@ -44,9 +50,13 @@
             "quantidade": "40",
             "cor": "",
             "largura": "",
+            "categoria": "eletronicos",
             "garantia": "5",
             "imagem": "IMG HEADSET.svg",
-            "categoria": "eletronicos"
+            "imagem1": "IMG HEADSET01.svg",
+            "imagem2": "IMG HEADSET02.svg",
+            "imagem3": "IMG HEADSET03.svg",
+            "description1": ""
         },
         {
             "id": "004",
@@ -58,8 +68,13 @@
             "quantidade": "35",
             "cor": "Preto",
             "largura": "",
+            "categoria": "móveis",
             "garantia": "5",
-            "imagem": "IMG CADEIRA GAMER.svg"
+            "imagem": "IMG CADEIRA GAMER.svg",
+            "imagem1": "IMG CADEIRA GAMER01.svg",
+            "imagem2": "IMG CADEIRA GAMER02.svg",
+            "imagem3": "IMG CADEIRA GAMER03.svg",
+            "description1": ""
         }
     ],
     "users": [
