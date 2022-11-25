@@ -27,7 +27,8 @@
             "description3":"Você não vai precisar molhar o chão ou o pano que acompanha o produto, basta substituir o reservatório de pó pelo de água com o pano acoplado. O Robô inteligente adapta-se a diferentes tipos de piso e é projetado para limpar embaixo de móveis, como: camas, sofás, armários e áreas difíceis de alcançar. Possui ainda Filtro de Alta Eficiência (HEPA) contra alérgenos de mofo, pólen, poeira e ácaros. Além disso, o robô aspirador de pó inteligente conta com sensores infravermelhos antiqueda e anticolisão que detectam as barreiras e redirecionam o trajeto sempre que encontra um obstáculo pela frente.",
             "tituloDescription4":"Retorno Automático para a Base",
             "description4":"O Robô Aspirador de Pó KaBuM! Smart possui bateria recarregável, função de retorno automático para a base ao detectar bateria baixa e pode ser utilizado no modo manual ou automático, através do seu controle remoto. Você pode ainda controlar todo o funcionamento do Robô à distância pelo seu Smartphone com o aplicativo KaBuM! Smart.",
-            "video":"https://www.youtube.com/watch?v=yCE2YOwYhgI"
+            "video":"https://www.youtube.com/watch?v=yCE2YOwYhgI",
+            "garanta":"Garanta já o seu Robô Aspirador de Pó Smart 500 no KaBuM!"
         },
         {
             "id": "002",
@@ -50,11 +51,12 @@
             "description1": "Jogos de verdade. Totalmente desbloqueado Velocidades mais elevadas, mais memória e largura de banda mais ampla do que as gerações anteriores. Processadores AMD Ryzen de 3ª geração com núcleo “Zen 2” de 7 nm² define o padrão para alto desempenho: tecnologia de fabricação exclusiva, histórico de produtividade no chip e desempenho global revolucionário para jogos. Faça outras atividades Atividades como uso de aplicativos do Office, edição de fotos, navegação da web e assistir os principais streamers são moleza graças ao incrível processamento de multitarefas.",
             "tituloDescription2":"Gráficos",
             "description2":"Radeon são alimentados para fornecer o alto desempenho que você merece.",
-            "tituloDescription3":"Garanta já o seu processador AMD Ryzen 3600 no KaBuM!",
+            "tituloDescription3":"",
             "description3":"",
             "tituloDescription4":"",
             "description4":"",
-            "video":""
+            "video":"",
+            "garanta":"Garanta já o seu processador AMD Ryzen 5 3600 no KaBuM!"
         },
         {
             "id": "003",
@@ -80,7 +82,8 @@
             "description3":"",
             "tituloDescription4":"",
             "description4":"",
-            "video":"https://www.youtube.com/watch?v=uXTClgoPUIc"
+            "video":"https://www.youtube.com/watch?v=uXTClgoPUIc",
+            "garanta":"Garanta já o seu Headset Gamer no KaBuM!"
         },
         {
             "id": "004",
@@ -98,15 +101,16 @@
             "imagem1": "IMG CADEIRA GAMER01.svg",
             "imagem2": "IMG CADEIRA GAMER02.svg",
             "imagem3": "IMG CADEIRA GAMER03.svg",
-            "tituloDescription1":"",
-            "description1": "",
-            "tituloDescription2":"",
-            "description2":"",
-            "tituloDescription3":"",
-            "description3":"",
+            "tituloDescription1":"Cadeira Gamer Alpha Gamer Vega, Preto",
+            "description1": "As cadeiras gaming Alpha Gamer Vega incluem duas almofadas: para apoio lombar e também para apoio da cabeça. Caso pretendas sentar-te numa posição mais reta, remove as almofadas. Se pretendes uma posição mais relaxada e confortável, então instala as almofadas. É tão simples quanto isto.",
+            "tituloDescription2":"Cadeira Gamer Reclinável",
+            "description2":"Puxa a alavanca lateral, encosta-te e relaxa! Podes ajustar a inclinação do encosto para um posicionamento até 180 graus. Alto ou baixo, pensámos em ti! As cadeiras gaming Alpha Gamer Vega possuem 9 cm de capacidade de ajuste da altura do assento.",
+            "tituloDescription3":"Apoios de Braços Ajustáveis",
+            "description3":"A ergonomia é um dos nossos principais focos de atenção; E como tal, desenvolvemos apoios de braço facilmente ajustáveis, em altura e rotação horizontal, para um ótimo encaixe com a estrutura corporal de qualquer pessoa.",
             "tituloDescription4":"",
             "description4":"",
-            "video":""
+            "video":"",
+            "garanta":"Aproveite essa oportunidade e adquira a Cadeira Gamer Alpha Gamer Vega no KaBuM!"
         }
     ],
     "users": [
