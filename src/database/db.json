@@ -4,8 +4,8 @@
             "id": "001",
             "marca": "KaBuM! Smart",
             "modelo": "Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático, Filtro HEPA, Controle via Aplicativo - KBSF000",
-            "unpriced": "R$ 939,00",
-            "preco": "R$ 845,00",
+            "unpriced": "939",
+            "preco": "845",
             "desconto": "10%",
             "status": "Ativo",
             "quantidade": "35",
@@ -26,14 +26,15 @@
             "tituloDescription3":"Tira o Pó e Passa Pano",
             "description3":"Você não vai precisar molhar o chão ou o pano que acompanha o produto, basta substituir o reservatório de pó pelo de água com o pano acoplado. O Robô inteligente adapta-se a diferentes tipos de piso e é projetado para limpar embaixo de móveis, como: camas, sofás, armários e áreas difíceis de alcançar. Possui ainda Filtro de Alta Eficiência (HEPA) contra alérgenos de mofo, pólen, poeira e ácaros. Além disso, o robô aspirador de pó inteligente conta com sensores infravermelhos antiqueda e anticolisão que detectam as barreiras e redirecionam o trajeto sempre que encontra um obstáculo pela frente.",
             "tituloDescription4":"Retorno Automático para a Base",
-            "description4":"O Robô Aspirador de Pó KaBuM! Smart possui bateria recarregável, função de retorno automático para a base ao detectar bateria baixa e pode ser utilizado no modo manual ou automático, através do seu controle remoto. Você pode ainda controlar todo o funcionamento do Robô à distância pelo seu Smartphone com o aplicativo KaBuM! Smart."
+            "description4":"O Robô Aspirador de Pó KaBuM! Smart possui bateria recarregável, função de retorno automático para a base ao detectar bateria baixa e pode ser utilizado no modo manual ou automático, através do seu controle remoto. Você pode ainda controlar todo o funcionamento do Robô à distância pelo seu Smartphone com o aplicativo KaBuM! Smart.",
+            "video":"https://www.youtube.com/watch?v=yCE2YOwYhgI"
         },
         {
             "id": "002",
             "marca": "AMD",
             "modelo": "Processador AMD Ryzen 5 3600 Cache 32MB 3.6GHz(4.2GHz Max Turbo)",
-            "unpriced": "R$ 1.319,00",
-            "preco": "R$ 1.187,00",
+            "unpriced": "1.319",
+            "preco": "1.187",
             "desconto": "10%",
             "status": "Ativo",
             "quantidade": "13",
@@ -52,17 +53,18 @@
             "tituloDescription3":"Garanta já o seu processador AMD Ryzen 3600 no KaBuM!",
             "description3":"",
             "tituloDescription4":"",
-            "description4":""
+            "description4":"",
+            "video":""
         },
         {
             "id": "003",
             "modelo": "Headset Gamer Fallen Morcego, Surround Virtual 7.1",
-            "unpriced": "R$ 275,00",
-            "preco": "R$ 247,00",
+            "unpriced": "275",
+            "preco": "247",
             "desconto": "10%",
             "status": "Ativo",
             "quantidade": "40",
-            "cor": "",
+            "cor": "Preto",
             "largura": "",
             "categoria": "eletrônicos",
             "garantia": "6 meses",
@@ -70,20 +72,21 @@
             "imagem1": "IMG HEADSET01.svg",
             "imagem2": "IMG HEADSET02.svg",
             "imagem3": "IMG HEADSET03.svg",
-            "tituloDescription1":"",
-            "description1": "",
+            "tituloDescription1":"Headset Gamer Fallen Morcego",
+            "description1": "A inspiração no jogo é o que nos motiva e o reconhecimento vem quando a nossa comunidade de fãs brasileiros participam dando o nome do nosso primeiro Headset!",
             "tituloDescription2":"",
-            "description2":"",
+            "description2":"O Headset Morcego, vem com alto-falantes de alta qualidade e Surround Virtual 7.1, proporcionando uma experiência única ao jogador. É a imersão ao jogo em um novo patamar.",
             "tituloDescription3":"",
             "description3":"",
             "tituloDescription4":"",
-            "description4":""
+            "description4":"",
+            "video":"https://www.youtube.com/watch?v=uXTClgoPUIc"
         },
         {
             "id": "004",
             "modelo": "Cadeira Gamer Alpha Gamer Vega, Preto, Reclinável, com Almofadas, Cilindro de Gás",
-            "unpriced": "R$ 1.154,00",
-            "preco": "R$ 1.038,00",
+            "unpriced": "1.154",
+            "preco": "1.038",
             "desconto": "10%",
             "status": "Ativo",
             "quantidade": "35",
@@ -102,7 +105,8 @@
             "tituloDescription3":"",
             "description3":"",
             "tituloDescription4":"",
-            "description4":""
+            "description4":"",
+            "video":""
         }
     ],
     "users": [
