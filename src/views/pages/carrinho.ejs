@@ -15,8 +15,8 @@
                     lembro meu CEP</a>
             </div>
         </div>
-        <% if (carrinho.length !==0) { %>
-            <% carrinho.map(produto=>{ %>
+        <% if (produtos.length !==0){ %>
+            <% produtos.map(produto=>{ %>
                 <div class="product">
                     <div class="interfaceProduct">
                         <h2 id="product">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="cupom">
                         <div class="infosCupom">
-                            <form action=<%=`/carrinhod/`${index}`%> method="post">
+                            <form action= <%=`/carrinhod/`${index}`%> method="post">
                                 <button>EXCLUIR</button>
                             </form>
                         </div>
