@@ -190,7 +190,7 @@ body {
 }
 
 .productImage{
-    display: flex;
+    display: grid;
     flex-direction: column;    
 }
 
@@ -209,4 +209,58 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem 0px;
+}
+
+.block{
+    display: flex;
+}
+
+.containerProductList{
+    display: flex;
+    align-items: flex-start;
+}
+
+.productImage{
+    display: grid;
+    flex-direction: column;
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+}
+
+.descricaoProduto{
+    display: flex;
+    justify-content: center;
+}
+
+.marcaModelProduct{
+    display: grid;
+}
+
+.marca{
+    font-weight: 700;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.model{
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttonDelete{
+    display: grid;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgb(231,38,38);
+    background: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
