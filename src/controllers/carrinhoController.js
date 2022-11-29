@@ -21,5 +21,11 @@ const carrinhoController = {
     req.session.carrinho.splice(req.params.index, 1)
         res.redirect("/carrinho")
     },
+    destroyCarrinho:(req,res) =>{
+        while(req.session.carrinho.length){
+            req.session.carrinho.pop()
+        }
+        res.redirect("/carrinho")
+    }
 }
 module.exports = carrinhoController

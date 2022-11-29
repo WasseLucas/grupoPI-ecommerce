@@ -14,6 +14,7 @@ router.get('/carrinho', carrinhoController.index);
 router.get('/checkout', checkoutController.index);
 router.post('/carrinho/:id', carrinhoController.adicionarCarrinho);
 router.post('/carrinhod/:index', carrinhoController.removerCarrinho);
+router.get('/destroy', carrinhoController.destroyCarrinho)
 //router.get('/login', authController.login);
 //router.get('/cadastro', UserController.renderFormCadastro);
 //rota para visualizar login
