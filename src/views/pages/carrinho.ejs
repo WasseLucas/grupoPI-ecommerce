@@ -15,8 +15,8 @@
                     lembro meu CEP</a>
             </div>
         </div>
-        <% if (produtos.length !==0){ %>
-            <% produtos.map(produto=>{ %>
+        <% if (carrinho  &&  carrinho.length != 0){ %>
+            <% carrinho.map((produto, index)=> { %>
                 <div class="product">
                     <div class="interfaceProduct">
                         <h2 id="product">
@@ -39,21 +39,27 @@
                     </div>
                     <div class="cupom">
                         <div class="infosCupom">
-                            <form action= <%=`/carrinhod/`${index}`%> method="post">
+                            <form action=<%=`/carrinhod/${index}`%> method="post">
                                 <button>EXCLUIR</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <% })} %>
+                <% })}else{ %>
+                    <div class="noProduct">
+                        Não tem produtos no seu carrinho.
                     </div>
-
-                    <div class="cart">
-                        <div id="cart">
-                            <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
-                            <button type="submit" id="continue">CONTINUAR COMPRANDO</button>
+                    <% } %>
                         </div>
-                    </div>
+                        <form action="/destroy">
+                            <button>APAGAR TUDO</button>
+                        </form>
+                        <div class="cart">
+                            <div id="cart">
+                                <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
+                                <button type="submit" id="continue">CONTINUAR COMPRANDO</button>
+                            </div>
+                        </div>
     </main>
 
     <%- include('../partials/footer') %>
