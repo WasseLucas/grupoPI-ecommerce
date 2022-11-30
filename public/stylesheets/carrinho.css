@@ -104,6 +104,24 @@ body {
     flex-direction: column;
 }
 
+.destroy{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.buttonDestroy{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .interfaceProduct{
     display: flex;
     justify-content: center;
@@ -155,6 +173,7 @@ body {
     color: rgb(255,101,0);
     display: flex;
     justify-content: flex-end;
+    font-size: 23px;
 }
 
 .deleteButton{
@@ -166,6 +185,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cart{
+    display: grid;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+#cart{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cart2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart3{
+    display: flex;
+    justify-content: space-between;
+}
+
+#continue{
+    border: 1px solid rgb(255,101,0);
+    color: rgb(255,101,0);
+    background: white;
+    border-radius: 4%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+#payment{
+    border: 1px solid rgb(255,101,0);
+    color: white;
+    background:  rgb(255,101,0);
+    border-radius: 4%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
 }
 
 .noProduct{
@@ -205,18 +269,20 @@ body {
     justify-content: center;
 }
 
-.homeButton{
+.backHomeButton{
     display: flex;
     justify-content: center;
     background: rgb(255,101,0);
     color: white;
     font-weight: bold;
+    font-size: 20px;
     border: 1px solid rgb(255,101,0);
     border-radius: 4%;
     box-sizing: border-box;
     align-items: center;
     margin-bottom: 5%;
-    width: 40%;
+    width: 70%;
+    cursor: pointer;
 }
 
 
