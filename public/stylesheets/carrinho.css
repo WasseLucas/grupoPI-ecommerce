@@ -2,7 +2,7 @@
 
 body {
     font-family: Poppins, sans-serif !important;
-    background-color: #DEE0E4;
+    background-color: #eff2fa;
     width: 100%;
 }
 
@@ -15,64 +15,158 @@ body {
 
 .container{
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0.5%;
+    margin-right: 5%;
+    margin-left: 5%;
     box-sizing: border-box;
-    background-color: transparent;
 }
 
-.principal{
-    box-sizing: border-box;
-    border: none;
+.containerCEP{
+    background-color: white;
+    display: grid;
 }
 
-.leftSide{
+.addres{
+    display: grid;
+    margin-top: 1%;
+}
+
+.select{
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex: 1 1 0%;
-}
-
-.containerAddress{
-    display: flex;
-    -webkit-box-align: center;
     align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
-.styleAddress{
-    width: 105%;
-    padding: 1rem;
-    background-color: rgb(255,255,255);
+#select-addres{
+    display: grid;
+    align-items: center;
+    font-size: 150%;
+    color: rgb(255,101,0);
+    margin-left: 1%;
+}
+
+.infosCEP{
+    display: flex;
+    justify-content: center;
+}
+
+#enterCEP{
+    display: grid;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 197px;
+    height: 38px;
+    border-radius: 5%;
+    align-items: center;
+    font-size: 14px;
+    border: 2px solid rgb(155, 155, 155);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#buttonOK{
+    width: 4%;
+    margin-left: 0.5rem;
+    font-size: 120%;
+    line-height: 2rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(255,101,0);
+    background-color: rgb(255,101,0);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+#CEP{
+    display: flex;
+    justify-content: center;
+}
+
+.CEP{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255,101,0);
+    margin-top: 1%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 100%;
+}
+
+.product{
+    display: flex;
+    background-color: white;
+    margin-top: 1%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.interfaceProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#product{
     display: grid;
     justify-content: center;
+    font-size: medium;
+    align-items: center;
+    margin-top: 2%;
+    font-weight: 500;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.productImage{
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.addressText{
+.description{
     display: flex;
-    border: none;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.nameAddress{
-    display: block;
-    font-size: 100%;
-    font-weight: 700;
-    color: rgb(66,70,77);
-    margin-left: 0.625rem;
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
+    align-items: center;
     justify-content: center;
 }
 
-.containerInputCEP{
-    display: flex;
-    -webkit-box-align: center;
-    flex-direction: column;
+#description{
+    display: grid;
     align-items: center;
-    margin: 1rem 0px;
+    justify-content: center;
 }
+
+#descriptionProduct{
+    font-weight: bold;
+    color: rgb(255,101,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .InputCEP{
     display: flex;
@@ -95,17 +189,6 @@ body {
     margin-bottom: 5%;
 }
 
-#buttonCEP{
-    width: 15%;
-    margin-left: 0.5rem;
-    font-size: 100%;
-    line-height: 2rem;
-    font-weight: 700;
-    border-radius: 0.25rem;
-    border: 1px solid rgb(255,101,0);
-    background-color: rgb(255,101,0);
-    color: rgb(255,255,255);
-}
 
 #remember{
     line-height: 1.5rem;
