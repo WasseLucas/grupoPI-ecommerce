@@ -4,29 +4,30 @@
     <p class="barraLaranja"></p>
 
     <main class="container">
-        <div class="containerCEP">
-            <div class="addres">
-                <div class="select">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11.4243 23.3261L11.986 24L12.585 23.2886C12.6606 23.198 12.7544 23.0951 12.8616 22.9776L12.8617 22.9775C13.0201 22.8039 13.2078 22.5982 13.4087 22.3526L13.5684 22.1709C16.0593 19.3375 20.9719 13.7493 20.9719 8.98596C20.9719 4.04368 16.9282 0 11.986 0C7.04368 0 3 4.04368 3 8.98596C3 13.8908 8.16693 19.6942 10.6755 22.4649C10.8582 22.6933 11.027 22.8799 11.1734 23.0417L11.1734 23.0417L11.1734 23.0418C11.267 23.1452 11.3513 23.2385 11.4243 23.3261ZM7.86719 8.42435C7.86719 10.7083 9.70182 12.5429 11.9858 12.5429C14.2697 12.5429 16.1043 10.7083 16.1043 8.42435C16.1043 6.14042 14.2697 4.30579 11.9858 4.30579C9.70182 4.30579 7.86719 6.14042 7.86719 8.42435Z"
-                            fill="#FF6500"></path>
-                    </svg>
-                    <h2 id="select-addres">SELECIONE O ENDEREÇO</h2>
-                </div>
-            </div>
-            <div class="infosCEP">
-                <input id="enterCEP" placeholder="Inserir CEP" value="" type="text">
-                <button type="submit" id="buttonOK">OK</button>
-            </div>
-            <form action="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" id="CEP">
-                <button class="CEP">Não
-                    lembro meu CEP</button>
-            </form>
-        </div>
+
 
         <% if (carrinho && carrinho.length !=0){ %>
             <% carrinho.map((produto, index)=> { %>
+                <div class="containerCEP">
+                    <div class="addres">
+                        <div class="select">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.4243 23.3261L11.986 24L12.585 23.2886C12.6606 23.198 12.7544 23.0951 12.8616 22.9776L12.8617 22.9775C13.0201 22.8039 13.2078 22.5982 13.4087 22.3526L13.5684 22.1709C16.0593 19.3375 20.9719 13.7493 20.9719 8.98596C20.9719 4.04368 16.9282 0 11.986 0C7.04368 0 3 4.04368 3 8.98596C3 13.8908 8.16693 19.6942 10.6755 22.4649C10.8582 22.6933 11.027 22.8799 11.1734 23.0417L11.1734 23.0417L11.1734 23.0418C11.267 23.1452 11.3513 23.2385 11.4243 23.3261ZM7.86719 8.42435C7.86719 10.7083 9.70182 12.5429 11.9858 12.5429C14.2697 12.5429 16.1043 10.7083 16.1043 8.42435C16.1043 6.14042 14.2697 4.30579 11.9858 4.30579C9.70182 4.30579 7.86719 6.14042 7.86719 8.42435Z"
+                                    fill="#FF6500"></path>
+                            </svg>
+                            <h2 id="select-addres">SELECIONE O ENDEREÇO</h2>
+                        </div>
+                    </div>
+                    <div class="infosCEP">
+                        <input id="enterCEP" placeholder="Inserir CEP" value="" type="text">
+                        <button type="submit" id="buttonOK">OK</button>
+                    </div>
+                    <form action="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" id="CEP">
+                        <button class="CEP">Não
+                            lembro meu CEP</button>
+                    </form>
+                </div>
                 <div class="product">
                     <div class="interfaceProduct">
                         <img src="images/<%= produto.imagem %>" alt="Imagem do produto" width="88px" height="88px">
@@ -35,43 +36,43 @@
                         </h2>
                         <div class="productImage">
                             <div class="description">
-                                <div id="description">
+                                <div id="description2">
                                     <span id="descriptionProduct">
                                         R$ <%= produto.preco %>,00
                                     </span>
                                     <form action=<%=`/carrinhod/${index}`%> method="post">
-                                        <button>EXCLUIR</button>
+                                        <button class="deleteButton">EXCLUIR</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
+                        <form action="/destroy">
+                            <button>APAGAR TUDO</button>
+                        </form>
                     </div>
-                    <div class="cupom">
-                        <div class="infosCupom">
-
+                    <div class="cart">
+                        <div id="cart">
+                            <form action="">
+                                <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
+                            </form>
+                            <form action="">
+                                <button type="submit" id="continue" href="http://localhost:3000">CONTINUAR COMPRANDO</button>
+                            </form>
                         </div>
+                    </div>
                     </div>
                     <div class="else">
                         <% })}else{ %>
                             <div class="noProduct">
-                                Não tem produtos no seu carrinho.
+                                <img src="images/john-travolta.gif" alt="searching Meme" class="searching" width="400px" height="320px">
+                                <p class="noProduct2">Não há produtos em seu carrinho.</p>
+                                <p class="buyables">Vamos fazer umas comprinhas?</p>
+                                <form action="" class="homeButton2">
+                                    <button class="homeButton">VOLTAR PARA A PÁGINA INICIAL</button>
+                                </form>
                             </div>
                             <% } %>
                     </div>
-                    <form action="/destroy">
-                        <button>APAGAR TUDO</button>
-                    </form>
-                </div>
-                <div class="cart">
-                    <div id="cart">
-                        <form action="">
-                            <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
-                        </form>
-                        <form action="">
-                            <button type="submit" id="continue" href="http://localhost:3000">CONTINUAR COMPRANDO</button>
-                        </form>
-                    </div>
-                </div>
     </main>
 
     <%- include('../partials/footer') %>
