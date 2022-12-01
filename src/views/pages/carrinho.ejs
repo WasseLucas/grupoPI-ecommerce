@@ -10,8 +10,7 @@
             <div class="containerCEP">
                 <div class="addres">
                     <div class="select">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="https://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M11.4243 23.3261L11.986 24L12.585 23.2886C12.6606 23.198 12.7544 23.0951 12.8616 22.9776L12.8617 22.9775C13.0201 22.8039 13.2078 22.5982 13.4087 22.3526L13.5684 22.1709C16.0593 19.3375 20.9719 13.7493 20.9719 8.98596C20.9719 4.04368 16.9282 0 11.986 0C7.04368 0 3 4.04368 3 8.98596C3 13.8908 8.16693 19.6942 10.6755 22.4649C10.8582 22.6933 11.027 22.8799 11.1734 23.0417L11.1734 23.0417L11.1734 23.0418C11.267 23.1452 11.3513 23.2385 11.4243 23.3261ZM7.86719 8.42435C7.86719 10.7083 9.70182 12.5429 11.9858 12.5429C14.2697 12.5429 16.1043 10.7083 16.1043 8.42435C16.1043 6.14042 14.2697 4.30579 11.9858 4.30579C9.70182 4.30579 7.86719 6.14042 7.86719 8.42435Z"
                                 fill="#FF6500"></path>
@@ -23,69 +22,73 @@
                     <input id="enterCEP" placeholder="Inserir CEP" value="" type="text">
                     <button type="submit" id="buttonOK">OK</button>
                 </div>
-                <form action="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"
-                    id="CEP">
+                <form action="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" id="CEP">
                     <button class="CEP">Não
                         lembro meu CEP</button>
                 </form>
             </div>
-            <form action="/destroy" class="destroy">
-                <button class="buttonDestroy">
-                    <svg width="24" height="32" viewBox="0 0 24 32" fill="none"
-                        xmlns="https://www.w3.org/2000/svg" class="IconTrash" size="10">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M16.6154 4H22.1538C23.2615 4 24 4.8 24 6V8H0V6C0 4.8 0.923077 4 1.84615 4H7.38462C7.75385 1.8 9.78461 0 12 0C14.2154 0 16.2462 1.8 16.6154 4ZM9.23077 4H14.7692C14.4 2.8 13.1077 2 12 2C10.8923 2 9.6 2.8 9.23077 4ZM1.84615 10H22.1538L20.4923 30.2C20.4923 31.2 19.5692 32 18.6462 32H5.35385C4.43077 32 3.69231 31.2 3.50769 30.2L1.84615 10Z"
-                            fill="#e72626"></path>
-                    </svg>
-                    APAGAR TUDO</button>
-            </form>
-            <% carrinho.map((produto, index)=> { %>
-                <div class="product">
-                    <div class="interfaceProduct">
-                        <img src="images/<%= produto.imagem %>" alt="Imagem do produto" width="88px" height="88px">
-                        <h2 id="product">
-                            <%= produto.modelo %>
-                        </h2>
-                        <div class="productImage">
-                            <div class="description">
-                                <div id="description2">
-                                    <span id="descriptionProduct">
-                                        R$ <%= produto.preco %>,00
-                                    </span>
-                                    <form action=<%=`/carrinhod/${index}`%> method="post">
-                                        <button class="deleteButton">EXCLUIR</button>
-                                    </form>
+            <div class="white">
+
+                <form action="/destroy" class="destroy">
+                    <button class="buttonDestroy">
+                        <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="https://www.w3.org/2000/svg"
+                            class="IconTrash" size="10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.6154 4H22.1538C23.2615 4 24 4.8 24 6V8H0V6C0 4.8 0.923077 4 1.84615 4H7.38462C7.75385 1.8 9.78461 0 12 0C14.2154 0 16.2462 1.8 16.6154 4ZM9.23077 4H14.7692C14.4 2.8 13.1077 2 12 2C10.8923 2 9.6 2.8 9.23077 4ZM1.84615 10H22.1538L20.4923 30.2C20.4923 31.2 19.5692 32 18.6462 32H5.35385C4.43077 32 3.69231 31.2 3.50769 30.2L1.84615 10Z"
+                                fill="#e72626"></path>
+                        </svg>
+                        APAGAR TUDO</button>
+                </form>
+                <% carrinho.map((produto, index)=> { %>
+
+                    <div class="product">
+                        <div class="interfaceProduct">
+                            <img src="images/<%= produto.imagem %>" alt="Imagem do produto" width="88px" height="88px">
+                            <h2 id="product">
+                                <%= produto.modelo %>
+                            </h2>
+                            <div class="productImage">
+                                <div class="description">
+                                    <div id="description2">
+                                        <h4 id="descriptionProduct">
+                                            R$ <%= produto.preco %>,00
+                                        </h4>
+                                        <form action=<%=`/carrinhod/${index}`%> method="post">
+                                            <button class="deleteButton">EXCLUIR</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="else">
-                    <% }) %>
-                    <div class="cart">
-                        <div id="cart">
-                            <form action="/" class="cart2">
-                                <button type="submit" id="continue">CONTINUAR
-                                    COMPRANDO</button>
-                            </form>
-                            <form action="/pagamento" class="cart3">
-                                <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
-                            </form>
 
-                        </div>
+                    <div class="else">
+                        <% }) %>
+                            <div class="cart">
+                                <div id="cart">
+                                    <form action="/" class="cart2">
+                                        <button type="submit" id="continue">CONTINUAR
+                                            COMPRANDO</button>
+                                    </form>
+                                    <form action="/pagamento" class="cart3">
+                                        <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <% }else{ %>
+                                <div class="noProduct">
+                                    <img src="images/john-travolta.gif" alt="searching Meme" class="searching"
+                                        width="400px" height="320px">
+                                    <p class="noProduct2">Não há produtos em seu carrinho.</p>
+                                    <p class="buyables">Vamos fazer umas comprinhas?</p>
+                                    <form action="/" class="homeButton2">
+                                        <button class="backHomeButton">VOLTAR PARA A PÁGINA INICIAL</button>
+                                    </form>
+                                </div>
+                                <% } %>
                     </div>
-                       <% }else{ %>
-                        <div class="noProduct">
-                            <img src="images/john-travolta.gif" alt="searching Meme" class="searching" width="400px"
-                                height="320px">
-                            <p class="noProduct2">Não há produtos em seu carrinho.</p>
-                            <p class="buyables">Vamos fazer umas comprinhas?</p>
-                            <form action="/" class="homeButton2">
-                                <button class="backHomeButton">VOLTAR PARA A PÁGINA INICIAL</button>
-                            </form>
-                        </div>
-                        <% } %>
-                </div>
+            </div>
     </main>
 
     <%- include('../partials/footer') %>

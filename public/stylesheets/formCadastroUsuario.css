@@ -34,29 +34,27 @@
     height:35px;
     border-radius: 4.5px;
     margin: 5px;
-
+    padding-left: 5%;
 }
 
 aside{
     display: flex;
     justify-content: center;
     gap: 3rem;
-
-    padding: 15px;    ;
-
+    padding: 15px;
 }
 
 .input{
-
     margin: -0.3rem;
 }
 
 .input input {
      width: 656px;
-
 }
 
-button {
+
+#entrar{
+    border: 2px solid rgb(255, 139, 31);
     margin: 40px;
     width: 150px;
     height: 35px;
@@ -65,17 +63,4 @@ button {
     color: #ffffff;
     cursor: pointer;
     transition-duration: 0.4s;
-
-
-}
-
-
-#entrar{
-    border: 2px solid rgb(255, 139, 31);
   }
-  
-  button:hover {
-    background-color: #f44336;
-    color: white;
-  }
-  
