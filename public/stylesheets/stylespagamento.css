@@ -495,3 +495,9 @@ main #middleBox #containerCenter #rightPanel li{
     margin-top: 2%;
     flex-wrap: wrap;
 }
+
+.buttonPayment{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,11 +1,15 @@
 <%- include("../partials/header"); %>
 
+    <head>
+        <link rel="stylesheet" href="stylesheets/error.css">
+    </head>
+
     <p class="barraLaranja"></p>
 
     <main>
 
         <div class="container">
-            <img src="/public/images/no-found.gif" alt="NOT-FOUND" id="not-found-img">        
+            <img src="/images/no-found.gif" alt="NOT-FOUND" id="not-found-img">
         </div>
         <div class="container" id="container">
             <div class="home">
@@ -14,12 +18,16 @@
             <div class="sub-home">
                 <span>PÁGINA NÃO ENCONTRADA</span>
             </div>
-            <button type="signup" class="apply">VOLTAR PARA PÁGINA INICIAL</button>
+            <div class="buttonHome">
+            <form action="/">
+                <button type="signup" class="apply">VOLTAR PARA PÁGINA INICIAL</button>
+            </form>
+        </div>
         </div>
     </main>
 
-    
 
 
 
-<%- include('../partials/footer'); %>
+
+    <%- include('../partials/footer'); %>
