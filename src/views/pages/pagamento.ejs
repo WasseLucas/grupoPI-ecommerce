@@ -1,68 +1,73 @@
 <%- include("../partials/header"); %>
-<head>
-    <link rel="stylesheet" href="stylesheets/stylespagamento.css">
-</head>
-<main>
-    <div class="barraLaranja"></div>
-    <div id="middleBox">
-        <div id="containerCenter">
-            <div id="leftPanel">
-                <div id="EyePay" >
-                    <div id="iconEye" >
-                        <span class="iconify" data-icon="mdi:eye-plus" style="color: #ff6500;"></span>
+
+    <head>
+        <link rel="stylesheet" href="stylesheets/stylespagamento.css">
+    </head>
+    <main>
+        <div class="barraLaranja"></div>
+        <div id="middleBox">
+            <div id="containerCenter">
+                <div id="leftPanel">
+                    <div id="EyePay">
+                        <div id="iconEye">
+                            <span class="iconify" data-icon="mdi:eye-plus" style="color: #ff6500;"></span>
+                        </div>
+                        <div id="textPay">
+                            <p>FORMA DE PAGAMENTO</p>
+                        </div>
                     </div>
-                    <div id="textPay" >                        
-                        <p>FORMA DE PAGAMENTO</p>
+                    <div id="Pix">
+                        <form action="" id="pix2">
+                            <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
+                            <p>PIX</p>
+                        </form>
+                            <img src="images/qrcode-pix.png" width="180%" height="80%">
+
+                    </div>
+                    <div id="Boleto">
+                        <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
+                        <div>
+                            <p>BOLETO BANCÁRIO</p>
+                        </div>
+
+                    </div>
+                    <div id="CC">
+                        <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
+                        <div>
+                            <p>CARTÃO DE CRÉDITO</p>
+                        </div>
+
                     </div>
                 </div>
-                <div id="Pix" >
-                    <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
-                    <div>
-                        <p>PIX</p> 
-                    </div>
-                    
-                </div>
-                <div id="Boleto" >
-                    <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
-                    <div>
-                        <p>BOLETO BANCÁRIO</p> 
-                    </div>
-                    
-                </div> 
-                <div id="CC" >
-                    <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
-                    <div>
-                        <p>CARTÃO DE CRÉDITO</p> 
-                    </div>
-                    
-                </div>           
             </div>
-        </div>
-        <div id="bottomPanel">
-            <div id="totalCompra">
-                <p id="tituloEsquerda">
+            <div id="bottomPanel">
+                <h3 id="tituloEsquerda">
                     TOTAL DA SUA COMPRA:
-                </p>
-                <p id="valorEsquerda">R$</p>
-
-            </div>
-        </div>          
-    
-    </div>
-    <div class="bottomBox"> 
-        <div id="back">
-            <div id="backText">
-                <p>VOLTAR</p>
+                </h3>
+                <h2 id="valorEsquerda">R$00,00</h2>
             </div>
 
         </div>
-        <div id="pay">
-            <div id="payText">
-                <p>PAGAR COM PIX</p>
+        <div class="bottomBox">
+            <div id="back">
+                <form action="/carrinho">
+                    <button id="backText">VOLTAR</button>
+                </form>
             </div>
-        </div>           
-    </div>
-    
-</main> 
+        </div>
 
-<%- include('../partials/footer'); %>
+    </main>
+
+<script>
+    $("#open").click(function(){
+     $("#a").css("display","block");
+     $("#b").css("display","block");
+                 });
+
+
+$(".cancel").click(function(){
+     $("#a").fadeOut();
+     $("#b").fadeOut();
+});
+</script>
+    <%- include('../partials/footer'); %>
