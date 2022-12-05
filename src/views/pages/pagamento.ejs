@@ -18,10 +18,11 @@
                     </div>
                     <div id="Pix">
                         <form action="" id="pix2">
+                            <button CLASS="buttonPayment">
                             <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
-                            <p>PIX</p>
+                            <span class="iconify" style="color: white;">PIX</span>
+                        </button>
                         </form>
-                            <img src="images/qrcode-pix.png" width="180%" height="80%">
 
                     </div>
                     <div id="Boleto">
@@ -59,15 +60,11 @@
     </main>
 
 <script>
-    $("#open").click(function(){
-     $("#a").css("display","block");
-     $("#b").css("display","block");
-                 });
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
 
-
-$(".cancel").click(function(){
-     $("#a").fadeOut();
-     $("#b").fadeOut();
-});
+    myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})
 </script>
     <%- include('../partials/footer'); %>
