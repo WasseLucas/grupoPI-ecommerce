@@ -17,4 +17,6 @@ router.get('/restrito', AuthController.renderAreaRestrita);
 // Rota para fazer o logout do usuário
 router.post('/logout', AuthController.logout);
 
+router
+
 module.exports = router;
