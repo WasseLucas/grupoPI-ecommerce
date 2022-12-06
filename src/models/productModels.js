@@ -20,7 +20,7 @@ const Produto = {
     findAll:() => bancoProdutos.produtos,
 
     findById:(id) => {
-        const produto = bancoProdutos.produtos.find(produto => produto.id ===id);
+        const produto = bancoProdutos.produtos.find(produto => produto.id === id);
         return produto;
     },
 

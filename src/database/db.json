@@ -317,6 +317,20 @@
             "cpf": "123456789",
             "email": "matheus@matheus.com.br",
             "password": "$2a$10$T/k2dvKHkQ8rXJ0QeRzLJ.thMQvi/ax.lTeSt7/eVGS32htn6v7Yi"
+        },
+        {
+            "id": "3c2868aa-b6b3-4e6e-80af-ad9813b5c597",
+            "nome": "dsdsadsds",
+            "cpf": "dsddsd",
+            "email": "dsdsdsd@fhdsfidhf.com",
+            "password": "$2a$10$/7fSp0QcAGm6GnUKihg2QOuwxUJZxvNQiivgCFFKsPvz4DN8uFo0C"
+        },
+        {
+            "id": "52f26f68-de09-47f0-ba82-73dbea38ce71",
+            "nome": "wsdadasdsa",
+            "cpf": "adsdasda",
+            "email": "adasdada@adsdas.com",
+            "password": "$2a$10$y99BS7KqlA08AGqfZB0uG.iD5euN9.As7.PYTSbFvWgUiuCbr6Q2W"
         }
     ]
 }
