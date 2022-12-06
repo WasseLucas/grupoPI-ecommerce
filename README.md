@@ -52,7 +52,7 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 
 <table align="center">
   <tr>
-       <td align="center"><a href="https://github.com/maluquerino"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107891390?v=4" width="100px;" alt=""/><br /><sub><b>Malu Querino</b></sub></a><br />
+       <td align="center"><a href="https://github.com/maluquerino"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107891390?v=4" width="100px;" alt=""/><br /><sub><b>Maria Luiza Querino</b></sub></a><br />
        <td align="center"><a href="https://github.com/Rudegog"><img style="border-radius: 50%;" src="https://scontent.fcgh37-1.fna.fbcdn.net/v/t39.30808-6/315449613_5566355430144828_260681987655510806_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dpJlW833O_kAX-8GW5E&_nc_oc=AQnf2S3juq2qIxWA4Kjo-7XUXOuf8J3PGlgQDMTC5zrmCYscO2948nfQwNwMLyULgNE&_nc_ht=scontent.fcgh37-1.fna&oh=00_AfB7Oeuyh0ZGpm6NUOYD6R2muwRtSvkcpbjTYEjC9QF9VQ&oe=638E6C5F" width="100px;" alt=""/><br /><sub><b>Matheus Gomes</b></sub></a><br />
     <td align="center"><a href="https://github.com/mathe153"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/35440139?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Ribeiro</b></sub></a><br /></td>
         <td align="center"><a href="https://github.com/WasseLucas"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/106719047?v=4" width="100px;" alt=""/><br /><sub><b>Wasse Lucas</b></sub></a><br />
