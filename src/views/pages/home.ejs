@@ -57,59 +57,60 @@
 
                 <% if (produtos && produtos.length> 0) {%>
                     <% produtos.map(produto=> { %>
-                        <div class="caixas" id="caixa1">
-                            <div class="conteudoComTexto">
-                                <div class="containerPai">
-                                    <div class="containerFilho">
-                                        <div class="displayOrange" id="caixaA">
-                                            <div id="porcentagem">
-                                                <%= produto.desconto %>
+                        <a href="/produto/<%= produto.id %>">
+                            <div class="caixas" id="caixa1">
+                                <div class="conteudoComTexto">
+                                    <div class="containerPai">
+                                        <div class="containerFilho">
+                                            <div class="displayOrange" id="caixaA">
+                                                <div id="porcentagem">
+                                                    <%= produto.desconto %>
+                                                </div>
+                                                <div id="caixaspan"><span class="iconify" data-icon="bxs:down-arrow">
+                                                    </span></div>
                                             </div>
-                                            <div id="caixaspan"><span class="iconify" data-icon="bxs:down-arrow">
-                                                </span></div>
+                                            <div id="caixaB">RESTAM <%= produto.quantidade %> UNID.</div>
                                         </div>
-                                        <div id="caixaB">RESTAM <%= produto.quantidade %> UNID.</div>
-                                    </div>
 
-                                    <div class="estrelas" id="caixaC">
-                                        <div id="iconstar"><span class="iconify" data-icon="clarity:star-solid">
-                                            </span>
-                                            <span class="iconify" data-icon="clarity:star-solid">
-                                            </span>
-                                            <span class="iconify" data-icon="clarity:star-solid">
-                                            </span>
-                                            <span class="iconify" data-icon="clarity:star-solid">
-                                            </span>
-                                            <span class="iconify" data-icon="clarity:star-solid">
-                                            </span>
+                                        <div class="estrelas" id="caixaC">
+                                            <div id="iconstar"><span class="iconify" data-icon="clarity:star-solid">
+                                                </span>
+                                                <span class="iconify" data-icon="clarity:star-solid">
+                                                </span>
+                                                <span class="iconify" data-icon="clarity:star-solid">
+                                                </span>
+                                                <span class="iconify" data-icon="clarity:star-solid">
+                                                </span>
+                                                <span class="iconify" data-icon="clarity:star-solid">
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <img src="images/<%= produto.imagem %>" width="200px" height="200px">
-                                <div id="texto">
-                                    <%= produto.modelo %>
-                                </div>
-                                <div id="texto1">
-                                    <!-- <%= Math.round(produto.preco * 1.1) %>,00 -->
-                                    R$ <%= produto.unpriced %>,00
-                                </div>
-                                <div id="texto2">
-                                    R$ <%= produto.preco %>,00
-                                </div>
-                                <div id="texto3">à vista no pix !</div>
-                                <div id="caixaTempo">
-                                    <div id="textTermina">
-                                        <form action="/carrinho/<%= produto.id %>" method="post">
+                                    <img src="images/<%= produto.imagem %>" width="200px" height="200px">
+                                    <div id="texto">
+                                        <%= produto.modelo %>
+                                    </div>
+                                    <div id="texto1">
+                                        <!-- <%= Math.round(produto.preco * 1.1) %>,00 -->
+                                        R$ <%= produto.unpriced %>,00
+                                    </div>
+                                    <div id="texto2">
+                                        R$ <%= produto.preco %>,00
+                                    </div>
+                                    <div id="texto3">à vista no pix !</div>
+                                    <div id="caixaTempo">
+                                        <div id="textTermina">
+                                            <form action="/carrinho/<%= produto.id %>" method="post">
 
-                                            <button class="testeButton">
-                                                ADICIONAR NO CARRINHO
-                                            </button>
-                                        </form>
+                                                <button class="testeButton">
+                                                    ADICIONAR NO CARRINHO
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </a>
                         <% })} %>
 
             </div>

@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 const indexRouter = require('./src/routes/index');
 const publicRouter = require('./src/routes/publicRouter');
 const privateRouter = require('./src/routes/privateRouter');
+const productRouter = require('./src/routes/product');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use('/', indexRouter);
 app.use('/', publicRouter);
 //Route from user extrict
 app.use('/', privateRouter);
+app.use('/', productRouter);
 
 
 // catch 404 and forward to error handler

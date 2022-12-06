@@ -2,10 +2,9 @@ const Produto = require("../models/productModels");
 
 const ProdutoController = {
     produto:(req,res) =>{
-        const id = req.params;
-        const prod = Produto.findAll(id)
-        console.log(id)
-        res.render("pages/produto", { prod })
+        const {id} = req.params;
+        const produto = Produto.findById(id)
+        res.render("pages/produto", { produto })
     },
     categoria:(req,res) =>{
         const categoria = req.params.categoria;
