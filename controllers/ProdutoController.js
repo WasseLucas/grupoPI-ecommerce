@@ -4,7 +4,7 @@ const produtoController = {
         res.send('Criando um produto'); 
     },
     deletarProduto:(req, res) => {
-        res.send('Deletand Produto')
+        res.send('Deletando Produto')
     }
 }
 
