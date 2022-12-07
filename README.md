@@ -44,7 +44,7 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 ```
 
 
-### O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+### O servidor inciará na porta:3000 - acesse em seu navegador de preferência: <http://localhost:3000>
 
 <h1 align="center"> OBRIGADO! </h1>
 
