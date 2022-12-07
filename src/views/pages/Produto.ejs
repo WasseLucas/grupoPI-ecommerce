@@ -3,12 +3,11 @@
     <head>
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../public/stylesheets/reset.css">
-        <link rel="stylesheet" href="../public/stylesheets/produto.css">
-        <link rel="icon" href="/public/images/kabum-icone.ico">
-        <title>
-            <%= produto.modelo %> | KaBuM
-        </title>
+        <link rel="icon" href="/images/kabum-icone.ico">
+        <link rel="stylesheet" href="/stylesheets/reset.css">
+        <link rel="stylesheet" href="/stylesheets/produto.css">
+
+        <title><%= produto.modelo %> | KaBuM </title>
     </head>
 
     <body>
@@ -21,7 +20,7 @@
 
                 <div class="icones">
                     <div class="imageSmart">
-                        <img src="images/<%= produto.marcaImagem %>" alt="<%= produto.marca %>" id="productImage"
+                        <img src="/images/<%= produto.marcaImagem %>" alt="<%= produto.marca %>" id="productImage"
                             width="70" height="28" class="sc-c6b13bf7-1 eqqIaN">
                     </div>
                     <div class="rating">
@@ -102,17 +101,22 @@
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                                     aria-label="Slide 0"></button>
                             </div>
                             <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="/images/<%= produto.imagem %>" title="" class="d-block w-100" alt="<%= produto.modelo %>">
+                                </div>
                                 <div class="carousel-item active">
-                                    <img src="images/<%= produto.imagem %>" title="" class="d-block w-100" alt="">
+                                    <img src="/images/<%= produto.imagem1 %>" title="" class="d-block w-100" alt="<%= produto.modelo %>">
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="images/<%= produto.imagem1 %>" title="" class="d-block w-100" alt="">
+                                <div class="carousel-item active">
+                                    <img src="/images/<%= produto.imagem2 %>" title="" class="d-block w-100" alt="<%= produto.modelo %>">
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="images/<%= produto.imagem2 %>" class="d-block w-100" title="" alt="">
+                                <div class="carousel-item active">
+                                    <img src="/images/<%= produto.imagem3 %>" title="" class="d-block w-100" alt="<%= produto.modelo %>">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
@@ -128,10 +132,10 @@
                         </div>
                         <div class="container-price">
                             <p class="strike"><s>
-                                    <%= produto.unpriced %>,00
+                                    R$ <%= produto.unpriced %>,00
                                 </s></p>
                             <p class="price-pix">
-                                <%= produto.preco %>,00
+                                R$ <%= produto.preco %>,00
                             </p>
                             <p class="pix">
                                 À vista no PIX
@@ -141,8 +145,8 @@
 
                     <div class="container-cep">
                         <div class="container-banner">
-                            <img src="/public/images/banner-blackFriday.svg" id="banner"
-                                alt="SAVE THE DATE - BLACK FRIDAY 25/11/2022">
+                            <img src="/images/BANNER-NATAL-NINJA.jpg" id="banner"
+                                alt="NATAL NINJA KABUM!">
                         </div>
                         <p class="frete">
                             Consultar frete e prazo de entrega
@@ -170,7 +174,6 @@
                 <div class="button-options">
                     <div class="button">
                         <button class="button-opt">Ver mais opções de pagamento</button>
-
                     </div>
                 </div>
 
@@ -192,7 +195,7 @@
                     <p>&nbsp;</p>
 
                     <p class="description-text">
-                        <%= produto.tituloDescription2 %>>
+                        <%= produto.tituloDescription2 %>
                     </p>
                     <p>
                         <%= produto.description2 %>
@@ -210,7 +213,7 @@
                     <p>&nbsp;</p>
 
                     <p class="description-text">
-                        <%= produto.tituloDescription4 %>>
+                        <%= produto.tituloDescription4 %>
                     </p>
                     <p>
                         <%= produto.description4 %>
@@ -222,18 +225,11 @@
                     <iframe class="video3" src="<%= produto.video %>" width="20%" height="20%"
                         allowfullscreen="true"></iframe>
 
-                    <p class="description-text2"><svg width="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="https://www.w3.org/2000/svg" class="IconAlert">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM11.9183 19.3859C10.8643 19.3859 10.0283 18.5943 10.0283 17.6134C10.0283 16.6326 10.8643 15.841 11.9183 15.841C12.9722 15.841 13.8082 16.6326 13.8082 17.6134C13.8082 18.5943 12.9722 19.3859 11.9183 19.3859ZM10.5464 12.7859C10.6133 13.4935 11.2074 14.0342 11.9183 14.0342C12.6291 14.0342 13.2233 13.4935 13.2902 12.7859L13.8278 7.09862C13.9342 5.97299 13.0489 5 11.9183 5C10.7876 5 9.90227 5.97299 10.0087 7.09862L10.5464 12.7859Z"
-                                fill="#FF6500"></path>
-                        </svg>&nbsp;INFORMAÇÕES TÉCNICAS</p>
-                    <p dir="ltr"><span><strong>Características:</strong></span></p>
-
                 </div>
 
             </div>
         </main>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
     <%- include('../partials/footer'); %>

@@ -102,6 +102,9 @@ body {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+
 }
 
 .sac {
