@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div id="Pix">
-                        <form action="/">
+                        <form action="">
                             <button CLASS="buttonPayment">
                             <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
                             <span class="iconify" style="color: white;">PIX</span>
@@ -44,7 +44,7 @@
                 <h3 id="tituloEsquerda">
                     TOTAL DA SUA COMPRA:
                 </h3>
-                <h2 id="valorEsquerda">R$00,00</h2>
+                <h2 id="valorEsquerda"> <%= total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})%></h2>
             </div>
 
         </div>
