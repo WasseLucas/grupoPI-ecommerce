@@ -3,8 +3,9 @@
     <head>
         <link rel="stylesheet" href="stylesheets/stylespagamento.css">
     </head>
+    <div class="barraLaranja"></div>
     <main>
-        <div class="barraLaranja"></div>
+        <% if (total && total.length !=0) { %>
         <div id="middleBox">
             <div id="containerCenter">
                 <div id="leftPanel">
@@ -19,8 +20,8 @@
                     <div id="Pix">
                         <form action="">
                             <button CLASS="buttonPayment">
-                            <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
-                            <span class="iconify" style="color: white;">PIX</span>
+                                <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
+                                <span class="iconify" style="color: white;">PIX</span>
                         </form>
 
                     </div>
@@ -44,7 +45,9 @@
                 <h3 id="tituloEsquerda">
                     TOTAL DA SUA COMPRA:
                 </h3>
-                <h2 id="valorEsquerda"> <%= total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})%></h2>
+                <h2 id="valorEsquerda">
+                    <%= total.toLocaleString('pt-br',{style: 'currency' , currency: 'BRL' })%>
+                </h2>
             </div>
 
         </div>
@@ -54,16 +57,31 @@
                     <button id="backText">VOLTAR</button>
                 </form>
             </div>
+            <div id="next">
+                <form action="/finaliza">
+                    <button id="nextText">PROSSEGUIR</button>
+                </form>
+            </div>
         </div>
-
+        <% }else{ %>
+            <div class="noProduct">
+                <img src="images/stop.gif" alt="IMAGEM ANIMADA DE PARE" class="searching"
+                    width="400px" height="320px">
+                <p class="noProduct2">OPS! Não encontramos nenhum item no seu carrinho.</p>
+                <p class="buyables">Que tal você ir até a página inicial e escolher o melhor presente de Natal?</p>
+                <form action="/" class="homeButton2">
+                    <button class="backHomeButton">VOLTAR PARA A PÁGINA INICIAL</button>
+                </form>
+            </div>
+            <% } %>
     </main>
 
-<script>
-    const myModal = document.getElementById('myModal')
-    const myInput = document.getElementById('myInput')
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
 
-    myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-})
-</script>
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
     <%- include('../partials/footer'); %>
