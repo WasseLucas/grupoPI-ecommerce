@@ -27,7 +27,7 @@ const UserController = {
 
     // Se o email e a senha forem válidos, cria uma sessão para o usuário
     // Salvando o email e o id do usuário na sessão
-    req.session.user = { email: usuario.email, id: usuario.id };
+    req.session.user = { email: usuario.email, id: usuario.id, nome: usuario.nome };
 
     // Redireciona para a página restrita
     return res.redirect('/restrito');
