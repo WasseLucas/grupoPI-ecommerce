@@ -26,6 +26,9 @@ const carrinhoController = {
             req.session.carrinho.pop()
         }
         res.redirect("/carrinho")
-    }
+    },
+    // somaCarrinho:(req,res) =>{
+ 
+    // }
 }
 module.exports = carrinhoController
