@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif !important;
 }
 main{
     background-color: #F5F5F5;
@@ -70,18 +71,19 @@ main #middleBox #containerCenter #leftPanel #EyePay{
     justify-content: left;
 }
 
-main #middleBox #containerCenter #leftPanel #EyePay #iconEye{
-    width: 5%;
-    font-size: 25px;
+#iconEye{
+    width: 10%;
 }
 
-main #middleBox #containerCenter #leftPanel #EyePay #textPay{
+#textPay{
     width: 45%;
     font-weight: 700;
     line-height:31px;
     padding-left: 10px;
     font-size: 120%;
     color: #42464d;
+    display: flex;
+    align-items: center;
 }
 
 #Pix{
@@ -104,7 +106,9 @@ main #middleBox #containerCenter #leftPanel #EyePay #textPay{
     transition: all .2s ease-out;
 }
 
-#pix2{
+
+
+#pix3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,12 +119,16 @@ main #middleBox #containerCenter #leftPanel #Pix:hover{
     cursor: pointer;
 }
 
-main #middleBox #containerCenter #leftPanel .iconify{
-    font-size: 25px;
+.iconify{
+    font-size: 250%;
     padding-right: 10px;
 }
 
-main #middleBox #containerCenter #leftPanel #Boleto{
+.iconify2{
+    font-size: 100%;
+}
+
+#Boleto{
     width: 30%;
     font-weight: 700;
     line-height:31px;
@@ -128,9 +136,9 @@ main #middleBox #containerCenter #leftPanel #Boleto{
     margin-top: 15px;
     font-size: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: #ff6500;
-    padding: 0px 30px;
     border: solid 1px #ff6500;
     height: 48px;
     background-image: linear-gradient(#ff6500, #ff6500), linear-gradient(#ffffff, #ffffff);
@@ -238,6 +246,7 @@ main #middleBox #containerCenter #rightPanel li{
 #tituloEsquerda{
     padding-top: 1%;
     display: flex;
+    font-weight: bold !important;
     justify-content: center;
 }
 
@@ -246,6 +255,7 @@ main #middleBox #containerCenter #rightPanel li{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold !important;
     margin-bottom: 1%;
 }
 
@@ -257,6 +267,8 @@ main #middleBox #containerCenter #rightPanel li{
     border-radius: 5px;
     text-align: center;
     font-size: 20px;
+    flex-wrap: wrap;
+    font-weight: bold !important;
     color: #1f9050;
     flex-direction: column;
 }
@@ -265,6 +277,7 @@ main #middleBox #containerCenter #rightPanel li{
     margin-top: 3%;
     margin-bottom: 3%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     justify-content: center;
@@ -274,12 +287,14 @@ main #middleBox #containerCenter #rightPanel li{
     display: flex;
     align-items: center;
     margin-right: 20%;
+    flex-wrap: wrap;
 }
 
 #next{
     display: flex;
     align-items: center;
     margin-left: 20%;
+    flex-wrap: wrap;
 }
 
 #backText{
@@ -506,10 +521,15 @@ main #middleBox #containerCenter #rightPanel li{
     flex-wrap: wrap;
 }
 
-.buttonPayment{
+#buttonPayment{
     background: none;
     border: none;
     cursor: pointer;
+    height: 100%;
+    width: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .noProduct{
@@ -563,4 +583,13 @@ main #middleBox #containerCenter #rightPanel li{
     margin-bottom: 5%;
     width: 70%;
     cursor: pointer;
+}
+
+.textoPix{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
 }

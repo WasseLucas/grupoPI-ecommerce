@@ -22,38 +22,29 @@
                         </div>
                     </div>
                     <div id="Pix">
-                        <form action="" id="pix2">
                             <!-- PROBLEMA -->
-                            <button CLASS="buttonPayment" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            <button id="buttonPayment" type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                                 <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
-                                <span class="iconify" style="color: white;">PIX</span> 
+                                <span class="iconify2" style="color: white;">PIX</span> 
                             </button>
-                        </form>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true"> 
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h3  class="modal-title fs-5" id="exampleModalLabel" class="text-center">
-                                            <a class="text-danger">PAGUE ATRAVÉS DO O PIX</a>
+                                        <h3  class="modal-title fs-5" id="exampleModalLabel">
+                                            <a class="textoPix">ESCANEIE O QR CODE ABAIXO</a>
                                         </h3>
-                                        
                                     </div>
                                     <div class="modal-body">
-                                        <h4 class="text-center" > <a class=".text-danger">Escaneie o qr code ou cole o
-                                                código abaixo no app do seu banco e conclua
-                                                sua compra: </a> </h4>
-                                        <img class="rounded mx-auto d-block" width="70px"
+                                        <img class="rounded mx-auto d-block" width="50%"
                                             src="images/QR_Code_Example.svg.png">
-                                        <p class="text-center"> <a class=".text-danger">
-                                                codigo.aleatorio.de.compra.através.do.pix </a> </p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">PAGAR AGORA</button>
+                                            data-bs-dismiss="modal">FECHAR</button>
                                     </div>
                                 </div>
                             </div>
@@ -61,9 +52,11 @@
 
                     </div>
                     <div id="Boleto">
-                        <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
-                        <div>
-                            <p>BOLETO BANCÁRIO</p>
+                        <div id="Pix3">
+                            <button id="buttonPayment" type="button" class="btn btn-primary">
+                            <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
+                            <span class="iconify2" style="color:#ff6500;">BOLETO BANCÁRIO</span> 
+                            </button>
                         </div>
 
                     </div>
