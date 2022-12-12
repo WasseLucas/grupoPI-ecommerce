@@ -6,102 +6,101 @@
         <link rel="stylesheet" href="stylesheets/stylespagamento.css">
 
     </head>
-    
+
     <main>
         <div class="barraLaranja"></div>
         <% if (total && total.length !=0) { %>
-        <div id="middleBox">
-            <div id="containerCenter">
-                <div id="leftPanel">
-                    <div id="EyePay">
-                        <div id="iconEye">
-                            <span class="iconify" data-icon="mdi:eye-plus" style="color: #ff6500;"></span>
+            <div id="middleBox">
+                <div id="containerCenter">
+                    <div id="leftPanel">
+                        <div id="EyePay">
+                            <div id="iconEye">
+                                <span class="iconify" data-icon="mdi:eye-plus" style="color: #ff6500;"></span>
+                            </div>
+                            <div id="textPay">
+                                <p>FORMA DE PAGAMENTO</p>
+                            </div>
                         </div>
-                        <div id="textPay">
-                            <p>FORMA DE PAGAMENTO</p>
-                        </div>
-                    </div>
-                    <div id="Pix">
+                        <div id="Pix">
                             <!-- PROBLEMA -->
                             <button id="buttonPayment" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                                data-bs-target="#exampleModal">
                                 <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
-                                <span class="iconify2" style="color: white;">PIX</span> 
+                                <span class="iconify2" style="color: white;">PIX</span>
                             </button>
 
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true"> 
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3  class="modal-title fs-5" id="exampleModalLabel">
-                                            <a class="textoPix">ESCANEIE O QR CODE ABAIXO</a>
-                                        </h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="rounded mx-auto d-block" width="50%"
-                                            src="images/QR_Code_Example.svg.png">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">FECHAR</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5" id="exampleModalLabel">
+                                                <a class="textoPix">ESCANEAR QR CODE</a>
+                                            </h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="rounded mx-auto d-block" width="50%"
+                                                src="images/QR_Code_Example.svg.png">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">FECHAR</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div id="Boleto">
-                        <div id="Pix3">
-                            <button id="buttonPayment" type="button" class="btn btn-primary">
-                            <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
-                            <span class="iconify2" style="color:#ff6500;">BOLETO BANCÁRIO</span> 
+                        </div>
+                        <div id="Boleto">
+                            <div id="CC">
+                                <button id="buttonPayment" type="button">
+                                    <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
+                                    <span class="iconify2" style="color:#ff6500;">BOLETO BANCÁRIO</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div id="CC">
+                            <button id="buttonPayment" type="button">
+                                <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
+                                <span class="iconify2" style="color:#ff6500;">CARTÃO DE CRÉDITO</span>
                             </button>
                         </div>
-
-                    </div>
-                    <div id="CC">
-                        <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
-                        <div>
-                            <p>CARTÃO DE CRÉDITO</p>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <div id="bottomPanel">
-                <h3 id="tituloEsquerda">
-                    TOTAL DA SUA COMPRA:
-                </h3>
-                <h2 id="valorEsquerda">
-                    <%= total.toLocaleString('pt-br',{style: 'currency' , currency: 'BRL' })%>
-                </h2>
-            </div>
+                <div id="bottomPanel">
+                    <h3 id="tituloEsquerda">
+                        TOTAL DA SUA COMPRA:
+                    </h3>
+                    <h2 id="valorEsquerda">
+                        <%= total.toLocaleString('pt-br',{style: 'currency' , currency: 'BRL' })%>
+                    </h2>
+                </div>
 
-        </div>
-        <div class="bottomBox">
-            <div id="back">
-                <form action="/carrinho">
-                    <button id="backText">VOLTAR</button>
-                </form>
             </div>
-            <div id="next">
-                <form action="/finalizar">
-                    <button id="nextText">PROSSEGUIR</button>
-                </form>
+            <div class="bottomBox">
+                <div id="back">
+                    <form action="/carrinho">
+                        <button id="backText">VOLTAR</button>
+                    </form>
+                </div>
+                <div id="next">
+                    <form action="/finalizar">
+                        <button id="nextText">PROSSEGUIR</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <% }else{ %>
-            <div class="noProduct">
-                <img src="images/stop.gif" alt="IMAGEM ANIMADA DE PARE" class="searching"
-                    width="400px" height="320px">
-                <p class="noProduct2">OPS! Não encontramos nenhum item no seu carrinho.</p>
-                <p class="buyables">Que tal você ir até a página inicial e escolher o melhor presente de Natal?</p>
-                <form action="/" class="homeButton2">
-                    <button class="backHomeButton">VOLTAR PARA A PÁGINA INICIAL</button>
-                </form>
-            </div>
-            <% } %>
+            <% }else{ %>
+                <div class="noProduct">
+                    <img src="images/stop.gif" alt="IMAGEM ANIMADA DE PARE" class="searching" width="400px"
+                        height="320px">
+                    <p class="noProduct2">OPS! Não encontramos nenhum item no seu carrinho.</p>
+                    <p class="buyables">Que tal você ir até a página inicial e escolher o melhor presente de Natal?</p>
+                    <form action="/" class="homeButton2">
+                        <button class="backHomeButton">VOLTAR PARA A PÁGINA INICIAL</button>
+                    </form>
+                </div>
+                <% } %>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
