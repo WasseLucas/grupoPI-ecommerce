@@ -2,34 +2,8 @@
 
 body {
     font-family: Poppins, sans-serif !important;
-    background-color: #DEE0E4;
+    background-color: #eff2fa;
     width: 100%;
-}
-
-.container {
-    background-color: #0060b1;
-    font-family: Poppins, sans-serif !important;
-    min-width: auto;
-    min-height: auto;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container ul {
-    list-style-type: none;
-}
-
-.container .login {
-    width: 500px;
-    text-align: left;
-}
-
-.container .login .textlogin {
-    font-size: 15px;
-    width: 200px;
-    color: #DEE0E4;
 }
 
 .barraLaranja {
@@ -39,242 +13,486 @@ body {
     height: 3px;
 }
 
-#logokabum svg {
-    width: 227px;
-    height: 75px;
-}
-
-.login {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #DEE0E4;
-    padding: 30px 0px;
-    width: 40px;
-    height: 40px;
-    padding-right: 10px;
-    padding-left: 100px;
-    width: 40px;
-    height: 40px;
-}
-
-
-.addres {
+.container{
     display: grid;
+    margin-top: 0.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+.containerCEP{
     background-color: white;
+    display: grid;
+}
+
+.addres{
+    display: grid;
+    margin-top: 1%;
+}
+
+.select{
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    width: 100%;
-    width: 800px;
-    margin-left: 4%;
-    flex-wrap: wrap;
-    border-radius: 1rem;
-}
-
-.select {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-    margin-block-start: 2em;
-    margin-block-end: 0.83em;
     font-weight: bold;
-    margin-left: 1.5rem;
 }
 
-#select-addres {
-    margin-block-start: 1em;
-}
-
-.infosCEP {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-
-#enterCEP {
-    background: transparent;
-    border-radius: 2px;
-    border-color: #DEE0E4;
-    width: 190px;
-    padding: 0.25rem;
-    margin-left: 3%;
-    margin-block-start: 0.83em;
-    margin-block-end: 2em;
-}
-
-#buttonOK {
-    border-radius: 3px;
-    border-color: rgb(255, 101, 0);
-    background-color: rgb(255, 101, 0);
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-left: 0.6rem;
-    height: 2em;
-}
-
-.CEP {
-    color: rgb(255, 101, 0);
-    font-size: 1.2rem;
-    margin-left: 1rem;
-}
-
-.product {
-    display: block;
-    width: 800px;
-    flex-wrap: wrap;
-    background: white;
-    border-radius: 1rem;
-    margin-left: 4%;
-    margin-block-start: 2em;
-    margin-block-end: 0.83em;
-}
-
-.interfaceProduct {
+#select-addres{
     display: grid;
-    gap: 0.8rem;
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif !important;
+    align-items: center;
+    font-size: 150%;
+    color: rgb(255,101,0);
+    margin-left: 1%;
 }
 
-
-#product {
+.infosCEP{
     display: flex;
-    font-size: 1.5em;
-    margin-block-start: 2em;
-    margin-block-end: 0.83em;
-    font-weight: bold;
     justify-content: center;
 }
 
-.productImage {
+#enterCEP{
+    display: grid;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 197px;
+    height: 38px;
+    border-radius: 5%;
+    align-items: center;
+    font-size: 14px;
+    border: 2px solid rgb(155, 155, 155);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#buttonOK{
+    width: 4%;
+    margin-left: 0.5rem;
+    font-size: 120%;
+    line-height: 2rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(255,101,0);
+    background-color: rgb(255,101,0);
+    color: rgb(255,255,255);
     cursor: pointer;
+}
+
+#CEP{
+    display: flex;
+    justify-content: center;
+}
+
+.CEP{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255,101,0);
+    margin-top: 1%;
+    cursor: pointer;
+    background: none;
     border: none;
-    margin: auto;
-    display: flex;
-    margin-block-end: 0.83em;
+    font-size: 100%;
 }
 
-.description {
-    display: block;
+.white{
+    background: white;
+    margin-top: 2%;
 }
 
-#description {
-    display: flex;
-    justify-content: center;
-}
-
-#ssd {
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-block-end: 0.50em;
-    display: flex;
-    justify-content: center;
-}
-
-#descriptionProduct {
-    cursor: pointer;
-    font-size: 0.8rem;
-    color: grey;
-    display: flex;
-    justify-content: center;
-}
-
-.margin-end {
-    margin-block-end: 2em;
-}
-
-.cupom {
-    display: block;
-}
-
-.infosCupom {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#applyCupom {
-    background: transparent;
-    border-radius: 2px;
-    border-color: #DEE0E4;
-    width: 200px;
-    padding: 0.25rem;
-    margin-left: 3%;
-    margin-block-start: 0.50em;
-    margin-block-end: 2em;
-}
-
-#buttonApply {
-    border-radius: 3px;
-    border-color: rgb(255, 101, 0);
-    background-color: rgb(255, 101, 0);
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-left: 0.6rem;
-    height: 2em;
-}
-
-.cart {
-    display: flex;
+.product{
+    display: grid;
     background-color: white;
+    margin-top: 1%;
+}
+
+.destroy{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.buttonDestroy{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.interfaceProduct{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#product{
+    display: flex;
+    justify-content: flex-start;
+    font-size: medium;
+    align-items: center;
+    font-weight: 500;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    margin-left: 0.5%;
+}
+
+
+.productImage{
+    display: grid;
+    justify-content: center;
+}
+
+.description{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.description2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#description{
+    display: grid;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    width: 100%;
-    width: 800px;
-    margin-left: 4%;
-    flex-wrap: wrap;
-    border-radius: 1rem;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
 }
 
-#cart {
+#descriptionProduct{
+    font-weight: bold;
+    color: rgb(255,101,0);
+    font-size: 23px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+    align-items: center;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deleteButton{
+    background: none;
+    cursor: pointer;
+    color: red;
+    border: none;
+    font-weight: bold;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-block-start: 0.50em;
-    margin-block-end: 2em;
+    align-items: center;
 }
 
-#payment {
-    border-radius: 3px;
-    border-color: rgb(255, 101, 0);
-    background-color: rgb(255, 101, 0);
+.cart{
+    display: grid;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    background: white;
+
+}
+
+#cart{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cart2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart3{
+    display: flex;
+    justify-content: space-between;
+}
+
+#continue{
+    border: 1px solid rgb(255,101,0);
+    color: rgb(255,101,0);
+    background: white;
+    border-radius: 4%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+#payment{
+    border: 1px solid rgb(255,101,0);
+    color: white;
+    background:  rgb(255,101,0);
+    border-radius: 4%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.noProduct{
+    display: grid;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.searching{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.noProduct2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(255,101,0);
+    margin-top: 2%;
+}
+
+.buyables{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(255,101,0);
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.homeButton2{
+    display: flex;
+    justify-content: center;
+}
+
+.backHomeButton{
+    display: flex;
+    justify-content: center;
+    background: rgb(255,101,0);
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 20px;
+    border: 1px solid rgb(255,101,0);
+    border-radius: 4%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 70%;
     cursor: pointer;
-    margin-left: 0.6rem;
-    height: 2em;
-    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.InputCEP{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group col-md-4{
+    display: flex;
+}
+
+.form-control{
+    background: transparent;
+    border: 1px solid rgb(222,224,228);
+    width: 10rem;
+    height: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 5%;
+}
+
+
+#remember{
+    line-height: 1.5rem;
+    color: rgb(255,101,0);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.containerProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    gap: 0.5rem;
+    width: 100%;
+    background: rgb(255,255,255);
+}
+
+.productStyleSection{
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#continue {
-    border-radius: 3px;
-    border-color: rgb(255, 101, 0);
-    background-color:white;
-    color: rgba(255, 101, 0);
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
-    height: 2em;
-    width: fit-content;
+.productTitle{
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.productTitle2{
+    display: grid;
     justify-content: center;
-    margin-block-start: 0.20em;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Iconbasket{
+    color: rgb(255,101,0);
+}
+
+.productNRide{
+    display: block;
+    font-size: 100%;
+    font-weight: 700;
+    color: rgb(66,70,77);
+    margin-left: 0.625rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+#removeProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    background: transparent;
+    border: 1px solid rgb(231,38,38);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.IconTrash{
+    margin-right: 0.25rem;
+    height: 0.8125rem;
+    width: 0.8125rem;
+}
+
+.removeItens{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgb(231,38,38);
+}
+
+.productImage{
+    display: grid;
+    flex-direction: column;    
+}
+
+.productImage2{
+    display: flex;
+}
+
+.productList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productOrigin{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0px;
+}
+
+.block{
+    display: flex;
+}
+
+.containerProductList{
+    display: flex;
+    align-items: flex-start;
+}
+
+.productImage{
+    display: grid;
+    flex-direction: column;
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+}
+
+.descricaoProduto{
+    display: flex;
+    justify-content: center;
+}
+
+.marcaModelProduct{
+    display: grid;
+}
+
+.marca{
+    font-weight: 700;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.model{
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttonDelete{
+    display: grid;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgb(231,38,38);
+    background: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }

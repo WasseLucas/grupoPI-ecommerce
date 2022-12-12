@@ -1,0 +1,154 @@
+<%- include("../partials/header"); %>
+
+
+    <main>
+        <div class=" barraLaranja">
+            <div class="itensbarra">
+                <div>
+                    <p>TODOS OS DEPARTAMENTOS</p>
+                </div>
+                <div>
+                    <p>LANÇAMENTOS</p>
+                </div>
+                <div>
+                    <p>DESTAQUES</p>
+                </div>
+                <div>
+                    <p>PC GAMER</p>
+                </div>
+                <div>
+                    <p>ELETRÔNICOS</p>
+                </div>
+                <div>
+                    <p>SEJA PRIME</p>
+                </div>
+                <div>
+                    <p>CARTÃO KABUM!</p>
+                </div>
+                <div>
+                    <p>BAIXE O APP</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promocao">
+            <img src="images/BANNER-NATAL-NINJA.jpg" alt="promocao" width="500px" height="570px">
+        </div>
+
+        <div class="caixa">
+            <div id="mes">
+                NATAL NINJA
+            </div>
+            <div class="timer" id="text">
+                <P>TERMINA EM: </P> &nbsp;
+                <div>
+                    <div id="timer">
+                    </div>
+                </div>
+
+                <div id="cronometro">
+                </div>
+            </div>
+        </div>
+
+        <div class="fundoItens">
+            <div class="caixagrande">
+
+
+                <% if (produtos && produtos.length> 0) {%>
+                    <% produtos.map(produto=> { %>
+                        <div class="caixas" id="caixa1">
+                            <div class="conteudoComTexto">
+                                <div class="containerPai">
+                                    <div class="containerFilho">
+                                        <div class="displayOrange" id="caixaA">
+                                            <div id="porcentagem">
+                                                <%= produto.desconto %>
+                                            </div>
+                                            <div id="caixaspan"><span class="iconify" data-icon="bxs:down-arrow">
+                                                </span></div>
+                                        </div>
+                                        <div id="caixaB">RESTAM <%= produto.quantidade %> UNID.</div>
+                                    </div>
+
+                                    <div class="estrelas" id="caixaC">
+                                        <div id="iconstar"><span class="iconify" data-icon="clarity:star-solid">
+                                            </span>
+                                            <span class="iconify" data-icon="clarity:star-solid">
+                                            </span>
+                                            <span class="iconify" data-icon="clarity:star-solid">
+                                            </span>
+                                            <span class="iconify" data-icon="clarity:star-solid">
+                                            </span>
+                                            <span class="iconify" data-icon="clarity:star-solid">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/<%= produto.imagem %>" width="200px" height="200px">
+                                <div id="texto">
+                                    <%= produto.modelo %>
+                                </div>
+                                <div id="texto1">
+                                    <!-- <%= Math.round(produto.preco * 1.1) %>,00 -->
+                                    R$ <%= produto.unpriced %>,00
+                                </div>
+                                <div id="texto2">
+                                    R$ <%= produto.preco %>,00
+                                </div>
+                                <div id="texto3">à vista no pix !</div>
+                                <div id="caixaTempo">
+                                    <div id="textTermina">
+                                        <form action="/carrinho/<%= produto.id %>" method="post">
+
+                                            <button class="testeButton">
+                                                ADICIONAR NO CARRINHO
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <% })} %>
+
+            </div>
+
+            <div class="banner-proximo">
+
+                <div class="propaganda">
+                    <div class="imageprop"><img src="images/prop1.jpg" alt="imagem1"></div>
+                    <div><img src="images/prop2.jpg" alt="imagem2"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script>
+        function startTimer(duration, display) {
+            let timer = duration, hours, minutes, seconds;
+
+            setInterval(function () {
+                hours = parseInt(1000 * 60 * 60 * 23) / (1000 * 60 * 60);
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ':' + minutes + ':' + seconds;
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const duration = 60 * 59;
+            const display = document.querySelector("#timer")
+            startTimer(duration, display);
+        }
+    </script>
+    <%- include('../partials/footer'); %>

@@ -7,87 +7,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/stylesheets/carrinho.css">
     <link href="/public/stylesheets/reset.css" rel="stylesheet">
-    <link rel="icon" href="/public/images/icone.png">
+    <link rel="icon" href="/public/images/kabum-icone.ico">
     <title>KaBuM! |Maior E-commerce de Tecnologia e Games da América Latina</title>
 </head>
 
 <body>
-    <header class="container">
-        <div id="logokabum">
-            <img src="img/logo_kabum_.png" alt="Logo Kabum!">
-            <!-- <svg width="131" height="47" viewBox="0 0 131 47" fill="none" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="131" height="47" fill="url(#pattern0)" />
-                <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_12_2"
-                            transform="translate(0 -0.00325059) scale(0.00347222 0.0096779)" />
-                    </pattern> -->
-            <!-- </svg> -->
-        </div>
-        <div class="login">
 
-            <span class="iconify" data-icon="fa:user-circle-o">
-            </span>
-            <div class="textlogin">
-                <ul>
-                    <li>Olá [Cliente]</li>
-                    <li>MINHA CONTA | SAIR</li>
-                </ul>
-            </div>
-        </div>
-
-
-    </header>
 
     <p class="barraLaranja"></p>
 
-    <main>
-        <div class="addres">
-            <div class="select">
-                <h2 id="select-addres">SELECIONE O ENDEREÇO</h2>
-            </div>
-            <div class="infosCEP">
-                <input id="enterCEP" placeholder="Inserir CEP" value="">
-                <button type="submit" id="buttonOK">OK</button>
-                <a target="_blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="CEP">Não
-                    lembro meu CEP</a>
-            </div>
-        </div>
 
-        <div class="product">
-            <div class="interfaceProduct">
-                <h2 id="product">PRODUTO</h2>
-                <div class="productImage">
-                    <img src="./img/produtos/IMG ASPIRADOR.svg" alt="Imagem do aspirador de pó da Kabum!">
-                </div>
-            </div>
-            <div class="description">
-                <p id="ssd">Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático!</p>
-                <div id="description">
-                    <span id="descriptionProduct">Com desconto no PIX: R$ 854,00</span>
-                </div>
-                <div id="description">
-                    <span id="descriptionProduct" class="margin-end">Parcelado no cartão em até 10x: R$ 1.150,90</span>
-                </div>
-            </div>
-            <div class="cupom">
-                <div class="infosCupom">
-                    <input id="applyCupom" placeholder="Insira seu cupom de desconto" value="">
-                    <button type="submit" id="buttonApply">Aplicar cupom</button>
-                </div>
-            </div>
-        </div>
-        </div>
+    <main class="container">
+        <div class="principal">
+            <div class="leftSide">
+                <div class="containerAddress">
+                    <section class="styleAddress">
+                        <div class="addressText">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="https://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.4243 23.3261L11.986 24L12.585 23.2886C12.6606 23.198 12.7544 23.0951 12.8616 22.9776L12.8617 22.9775C13.0201 22.8039 13.2078 22.5982 13.4087 22.3526L13.5684 22.1709C16.0593 19.3375 20.9719 13.7493 20.9719 8.98596C20.9719 4.04368 16.9282 0 11.986 0C7.04368 0 3 4.04368 3 8.98596C3 13.8908 8.16693 19.6942 10.6755 22.4649C10.8582 22.6933 11.027 22.8799 11.1734 23.0417L11.1734 23.0417L11.1734 23.0418C11.267 23.1452 11.3513 23.2385 11.4243 23.3261ZM7.86719 8.42435C7.86719 10.7083 9.70182 12.5429 11.9858 12.5429C14.2697 12.5429 16.1043 10.7083 16.1043 8.42435C16.1043 6.14042 14.2697 4.30579 11.9858 4.30579C9.70182 4.30579 7.86719 6.14042 7.86719 8.42435Z"
+                                    fill="#FF6500"></path>
+                            </svg>
+                            <h2 class="nameAddress">SELECIONE O ENDEREÇO</h2>
 
-        <div class="cart">
-            <div id="cart">
-                <button type="submit" id="payment">IR PARA O PAGAMENTO</button>
-                <button type="submit" id="continue">CONTINUAR COMPRANDO</button>
+                        </div>
+                        <form action="" class="containerInputCEP">
+                            <div class="InputCEP">
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')"
+                                        placeholder="Inserir CEP">
+                                    <button type="submit" onclick="" id="buttonCEP" disabled>OK</button>
+                                </div>
+                            </div>
+                            <a target="_blank" id="remember"
+                                href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não lembro meu
+                                CEP</a>
+                        </form>
+                    </section>
+                </div>
+                <div class="containerProduct">
+                    <section class="productStyleSection">
+                        <div class="productTitle2">
+                            <div class="productTitle">
+                                <img src="https://thebeefarmer.co.uk/_webedit/cached-images/30-0-1260-929-7722-7722-618.png"
+                                    alt="Ícone de cesta" class="Iconbasket" width="22" height="22">
+                                <h2 class="productNRide">PRODUTO E FRETE</h2>
+                            </div>
+                            <form action="" method="post">
+                                <button id="removeProduct" onclick="removerProdutos">
+                                    <span class="removeItens">REMOVER TODOS</span>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                    <div class="productImage">
+                        <div class="productImage2">
+                            <div class="productList">
+                                <div class="productOrigin">
+                                    <div class="block">
+                                        <div class="containerProductList">
+                                            <img src="https://images5.kabum.com.br/produtos/fotos/114195/robo-aspirador-de-po-kabum-smart-wi-fi_1602000476_m.jpg"
+                                                class="productImage" title="Imagem do Produto" alt="PRODUTO">
+                                            <div class="descricaoProduto">
+                                                <div class="marcaModelProduct">
+                                                    <span class="marca">KaBuM! Smart</span>
+                                                    <span class="model">Robô Aspirador de Pó KaBuM! Smart 500, Preto -
+                                                        Recarregamento Automático, Filtro HEPA, Controle via Aplicativo
+                                                        -
+                                                        KBSF000</span>
+                                                    <form action="" method="post">
+                                                        <button class="buttonDelete">
+                                                            EXCLUIR
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="linhaInvi">
+
+                                            </div>
+                                            <div class="linePriceQuantity">
+                                                <div class="linePrice">
+                                                    <p class="">Preço à vista no PIX:</p>
+                                                </div>
+                                                <div class="lineQuantity">
+                                                    <button disabled="" class="">
+                                                        <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                                            xmlns="https://www.w3.org/2000/svg"
+                                                            class="IconArrowOrangeLeft">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M7.91673 14L9.18945 12.7273L3.46218 7L9.18945 1.27273L7.91673 0L0.916725 7L7.91673 14Z"
+                                                                fill="#ff6500">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="">
+                                                        <label for="quantity-114195"
+                                                            class="Quantity-styles__QuantityLabel-sc-d6427ac4-3 bCfeZo">Quantidade
+                                                        </label>
+                                                        <input id="quantity-114195" class="" value="1">
+                                                        <button class="">
+                                                            <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                                                xmlns="https://www.w3.org/2000/svg"
+                                                                class="IconArrowOrangeRight">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.18972 14L0.916992 12.7273L6.64427 7L0.916992 1.27273L2.18972 0L9.18972 7L2.18972 14Z"
+                                                                    fill="#ff6500"></path>
+                                                                </svg>
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="checkoutButtons">
+                        <section class="checkoutStyle">
+                            <div class="chechoutNavigation">
+                                <button>CONTINUAR COMPRANDO</button>
+                                <button>IR PARA O PAGAMENTO</button>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 </html>

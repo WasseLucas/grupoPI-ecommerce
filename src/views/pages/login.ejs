@@ -1,0 +1,40 @@
+<%- include("../partials/header"); %>
+   <head>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <script src="javascripts/loginScript.js"></script>
+   </head>
+
+    <nav class="barrinhaLaranja"></nav>
+    
+
+    <form action="/login" method="post">
+        <div class="boxform">
+           <div id="form">
+                <div class="box">
+                    <h1> FAZER LOGIN</h1>
+                    <div id="input">
+                        <div class="boxInput"  class="" >
+                            <div class="input">
+                                <input class="campo" name="email" type="email" id="email" placeholder=" &nbsp; &nbsp; E-mail" required>
+                            </div>
+        
+                            <div class="input">
+                                    <input class="campo" name="password" type="password" placeholder="&nbsp; &nbsp;Senha" id="senha" required>
+                            </div>
+            
+                            <div >
+                                <button class="btnLogin" onclick="logar()" >         
+                                    <a class="btn-logar" href="/profile">FAZER LOGIN</a> 
+                                </button>
+                            </div>
+                            <a class="TrocarSenha" href="">Esqueceu a senha?</a>
+                            <div  >
+                                <span >Novo no Kabum? </span>
+                                <a class="Cadastro" href="/cadastro"> <strong>CADASTRA-SE</strong> </a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+           </div>
+        </div>
+    </form>

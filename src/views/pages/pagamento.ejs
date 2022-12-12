@@ -1,0 +1,70 @@
+<%- include("../partials/header"); %>
+
+    <head>
+        <link rel="stylesheet" href="stylesheets/stylespagamento.css">
+    </head>
+    <main>
+        <div class="barraLaranja"></div>
+        <div id="middleBox">
+            <div id="containerCenter">
+                <div id="leftPanel">
+                    <div id="EyePay">
+                        <div id="iconEye">
+                            <span class="iconify" data-icon="mdi:eye-plus" style="color: #ff6500;"></span>
+                        </div>
+                        <div id="textPay">
+                            <p>FORMA DE PAGAMENTO</p>
+                        </div>
+                    </div>
+                    <div id="Pix">
+                        <form action="" id="pix2">
+                            <button CLASS="buttonPayment">
+                            <span class="iconify" data-icon="ic:round-pix" style="color: white;"></span>
+                            <span class="iconify" style="color: white;">PIX</span>
+                        </button>
+                        </form>
+
+                    </div>
+                    <div id="Boleto">
+                        <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
+                        <div>
+                            <p>BOLETO BANCÁRIO</p>
+                        </div>
+
+                    </div>
+                    <div id="CC">
+                        <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
+                        <div>
+                            <p>CARTÃO DE CRÉDITO</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="bottomPanel">
+                <h3 id="tituloEsquerda">
+                    TOTAL DA SUA COMPRA:
+                </h3>
+                <h2 id="valorEsquerda">R$00,00</h2>
+            </div>
+
+        </div>
+        <div class="bottomBox">
+            <div id="back">
+                <form action="/carrinho">
+                    <button id="backText">VOLTAR</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})
+</script>
+    <%- include('../partials/footer'); %>

@@ -1,0 +1,54 @@
+<%- include("../partials/header"); %>
+ <head>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="stylesheets/formCadastroUsuario.css">
+
+</head>
+
+
+ <!---->
+    
+ <!---->
+ <form id="formCadastro" action="/cadastro" method="post">
+     <div>
+         <h1> CRIAR CONTA </h1>
+
+         <aside >
+             <div>
+                 <input class="campo" name="nome" type="text" placeholder="Nome completo* " id="nome" required>
+             </div>
+
+             <div>
+                 <input class="campo" type="data" placeholder="Data de nascimento* " maskplaceholder="dd/mm/yyyy" value=""  required>
+             </div>
+
+         </aside>
+
+         <aside >
+             <div>
+                 <input class="campo" name="cpf" type="text" placeholder="Numero do CPF*" id="cpf" required>
+             </div>
+
+             <div>
+                 <input class="campo" name="nascimento" type="data" placeholder="Telefone celular* " required>
+             </div>
+
+         </aside>
+
+         <div class="input">
+             <div>
+                 <input class="campo" name="email" type="email" placeholder="E-mail*" id="email" required>
+             </div>
+
+             <div>
+                 <input class="campo" name="password" type="password" placeholder="Senha*" id="password" required>
+             </div>
+
+         </div>
+             <div class="btnCadastro">
+                 <button id="entrar">
+                    CADASTRAR
+                 </button>
+             </div>
+     </div>
+</form>

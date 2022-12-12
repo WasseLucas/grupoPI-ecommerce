@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="containerHeader">
+        <div class="logo">
+            <div class=" box-1">
+                <img class="imgLogo" src="../public/images/Captura de tela de 2022-09-28 17-09-24.png" alt="logoKabum">
+                <div class="loginCadastro">
+                    <img  class="iconLogin" src="../public/images/iconLoginKabum.png" alt="login">
+                    <div class="BoxLoginCadastro">
+                        <p> &nbsp; Faça <a href=""><strong >LOGIN</strong></a></p>
+                        &nbsp; crie seu <a href=""><strong> CADASTRO</strong></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="barrinhaLaranja"></nav>
+    
+
+    <form action="/login" method="post">
+        <div class="boxform">
+           <div id="form">
+                <div class="box">
+                    <h1> FAZER LOGIN</h1>
+                    <div id="input">
+                        <div class="boxInput">
+                            <div class="input">
+                                <input class="campo" name="email" type="email" id="email" placeholder=" &nbsp; &nbsp; E-mail" required>
+                            </div>
+        
+                            <div class="input">
+                                    <input class="campo" name="password" type="password" placeholder="&nbsp; &nbsp;Senha" id="senha" required>
+                            </div>
+            
+                            <div >
+                                <button class="btnLogin">         
+                                    FAZER LOGIN 
+                                </button>
+                            </div>
+                            <a class="TrocarSenha" href="">Esqueceu a senha?</a>
+                            <div  >
+                                <span >Novo no Kabum? </span>
+                                <a class="Cadastro" href="/cadastro"> <strong>CADASTRA-SE</strong> </a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+           </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -61,18 +61,6 @@ body {
     display: flex;
 }
 
-/* .text-input-email {
-    display: flex;
-    background: white;
-    box-sizing: border-box;
-    width: 197px;
-    height: 38px;
-    border-radius: 5%;
-    align-items: center;
-    max-width: 100%;
-    flex-wrap: wrap;
-} */
-
 .cadastrar {
     background: rgb(255, 94, 0);
     border-radius: 0.25rem;
