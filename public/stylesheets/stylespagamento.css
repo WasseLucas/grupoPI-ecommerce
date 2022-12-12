@@ -179,13 +179,13 @@ main #middleBox #containerCenter #leftPanel #CK:hover{
     cursor: pointer;
 }
 
-main #middleBox #containerCenter #leftPanel #CC{
+#CC{
     width: 30%;
     font-weight: 700;
     line-height:31px;
     border-radius: 5px;
-    margin-top: 15px;
-    font-size: 100%;
+    margin-top: 25px;
+    font-size: 95%;
     display: flex;
     align-items: center;
     color: #ff6500;
@@ -197,6 +197,10 @@ main #middleBox #containerCenter #leftPanel #CC{
     background-repeat: no-repeat;
     background-position: center bottom;
     transition: all .2s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+
 }
 
 main #middleBox #containerCenter #leftPanel #CC:hover{
