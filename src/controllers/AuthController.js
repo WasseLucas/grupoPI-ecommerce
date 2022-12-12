@@ -48,16 +48,16 @@ const UserController = {
       // Se estiver logado, redireciona para a página restrita
       return res.redirect('/restrito');
     }
-
     // Renderiza a página de login
     return res.render('pages/login',  { error: null });
   },
 
+  //Pág restrita
   renderAreaRestrita: (req, res) => {
     // Busca o usuário na sessão
     const user = req.session.user;
     // Renderiza a página restrita passando os dados do usuário logado
-    return res.render('pages/profile',  { user });
+    return res.render('pages/account', { user });
   }
 }
 

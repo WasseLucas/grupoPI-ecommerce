@@ -29,7 +29,7 @@ const UserController = {
         // Ou seja, se existe uma sessão para o usuário
         if(req.session.user != undefined){
             // Se estiver logado, redireciona para a página restrita
-            return res.redirect('./pages/profile') //restrito
+            return res.redirect('./pages/account') //restrito
         };
          // Renderiza a página de cadastro de usuário
         return res.render('./pages/formCadastro');
