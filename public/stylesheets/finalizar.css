@@ -1,39 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* .css-selector {
-    background: linear-gradient(182deg, #17f200, #ffffff);
-    background-size: 100% 100%;
-
-    -webkit-animation: AnimationName 5s ease ;
-    -o-animation: AnimationName 5s ease ;
-    animation: AnimationName 5s ease ;
+.html{
+    display: flex;
+    justify-content: center;
 }
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:52% 0%}
-    50%{background-position:49% 100%}
-    100%{background-position:52% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:52% 0%}
-    50%{background-position:49% 100%}
-    100%{background-position:52% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:52% 0%}
-    50%{background-position:49% 100%}
-    100%{background-position:52% 0%}
-} */
-
-
 
 .success-animation { 
     margin:150px auto;
 }
 
 .checkmark {
-    width: 15%;
+    width: 25%;
     border-radius: 50%;
     display: block;
     stroke-width: 2;
@@ -84,4 +62,24 @@
     100% {
         box-shadow: inset 0px 0px 0px 30px #4bb71b;
     }
+}
+
+.botaoBHome{
+    display: flex;
+    justify-content: center;
+}
+
+#botaoBHome{
+    display: flex;
+    justify-content: center;
+    background: rgb(255,101,0);
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    border: 1px solid rgb(255,101,0);
+    border-radius: 4%;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 120%;
+    cursor: pointer;
 }

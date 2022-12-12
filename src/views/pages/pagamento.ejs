@@ -51,17 +51,35 @@
                             </div>
 
                         </div>
-                        <div id="Boleto">
-                            <div id="CC">
-                                <button id="buttonPayment" type="button">
-                                    <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
-                                    <span class="iconify2" style="color:#ff6500;">BOLETO BANCÁRIO</span>
-                                </button>
-                            </div>
-
-                        </div>
                         <div id="CC">
-                            <button id="buttonPayment" type="button">
+                            <button id="buttonPayment" type="button" onclick="credito()">
+                                <span class="iconify" data-icon="ic:round-barcode" style="color: #ff6500;"></span>
+                                <span class="iconify2" style="color:#ff6500;">BOLETO BANCÁRIO</span>
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5" id="exampleModalLabel">
+                                                <a class="textoPix">PAGUE O SEU BOLETO ABAIXO</a>
+                                            </h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="rounded mx-auto d-block" width="100%" src="images/boletin.png">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">FECHAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="CC">
+                            <button id="buttonPayment" type="button" onclick="credito()">
                                 <span class="iconify" data-icon="ic:round-credit-card" style="color: #ff6500;"></span>
                                 <span class="iconify2" style="color:#ff6500;">CARTÃO DE CRÉDITO</span>
                             </button>
@@ -115,4 +133,12 @@
             myInput.focus()
         })
     </script>
+
+    <script>
+        function credito() {
+            alert("Função de crédito não disponível no momento. Tente via PIX :-)");
+        }
+    </script>
+
+
     <%- include('../partials/footer'); %>
