@@ -75,11 +75,9 @@ a {
 
 #busca1{
     display: flex;
-    min-height: auto;
-    min-width: auto;
     font-size: 16px;
-    width: 404px;
-    height: 36px;
+    width: 50%;
+    height: 5%;
 }
 
 
@@ -99,14 +97,10 @@ a {
 }
 
 #seta img {
-    float: left;
-    padding-top: 2.5px;
-    width: 70px;
-    height: 80px;
-    top: 10px;
+    padding-top: 0.3%;
+    width: 15%;
     position: absolute;
-    left: 360px;
-    top: -17px
+    left: 47%;
 }
 
 #divBusca {
